@@ -17,13 +17,15 @@
 }
  
 .logolink a:hover .sakuraso {
-    background-color: orange;
+    background-color: pink;
+    /* background-color: orange; */
     color: #fff;
 }
  
 .logolink a:hover .shironeko,
 .logolink a:hover rt {
-    color: orange;
+    /* color: orange; */
+    color: pink;
 }
  
 .logolink.logo a {
