@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2801956 */
+  src: url('//at.alicdn.com/t/font_2801956_uux1usksv4.woff2?t=1631180054110') format('woff2'),
+       url('//at.alicdn.com/t/font_2801956_uux1usksv4.woff?t=1631180054110') format('woff'),
+       url('//at.alicdn.com/t/font_2801956_uux1usksv4.ttf?t=1631180054110') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wangyiyun:before {
+  content: "\e650";
+}
+
+.icon-github:before {
+  content: "\e66f";
+}
+
+.icon-icon_bilibili-circle:before {
+  content: "\e600";
+}
+
