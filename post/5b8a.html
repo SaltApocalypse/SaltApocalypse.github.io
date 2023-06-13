@@ -6,7 +6,7 @@
   <!-- <meta name="baidu-site-verification" content="LukfTcyXmC" /> -->
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">teriteri——自己写着玩的Typora主题 | SaltA&#39;s Utopia</title>
+  <title itemprop="name">使用VSCode进行C++操作MySQL的环境配置（windows适用） | SaltA&#39;s Utopia</title>
   
     <link rel="shortcut icon" href="/Global/Main/Favicon.ico">
   
@@ -260,7 +260,7 @@
     src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/907577659/CDN/MainSite/MianCover.png">
   </div>
   <header class="pattern-header single-header">
-    <h1 class="entry-title">teriteri——自己写着玩的Typora主题</h1>
+    <h1 class="entry-title">使用VSCode进行C++操作MySQL的环境配置（windows适用）</h1>
     <p class="entry-census">
       
       
@@ -268,7 +268,7 @@
         <span class="post-meta-item-icon">
           <i class="fa fa-calendar"></i>
         </span>
-        <span class="post-meta-item-text"> 2023-3-28 </span>
+        <span class="post-meta-item-text"> 2023-6-13 </span>
       </span>
       <span class="bull">
         ·</span>
@@ -292,7 +292,7 @@
     <i class="fa fa-book"></i>
     <span class="post-meta-item-text">字数统计: </span>
     <!-- 安装插件npm install hexo-wordcount --save -->
-    <span class="post-count">692字</span>
+    <span class="post-count">1.1k字</span>
   </span>
 </span>
 <span class="bull">
@@ -301,7 +301,7 @@
   <span class="post-meta-item-icon">
     <i class="fa fa-coffee"></i>
     <span class="post-meta-item-text">阅读时长≈</span>
-    <span class="post-count">2分钟</span>
+    <span class="post-count">4分钟</span>
   </span>
 </span>
         
@@ -314,7 +314,7 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               </span class="post-meta-item-text">
-                <span class="valine-comment-count" data-xid="/641c"> </span>
+                <span class="valine-comment-count" data-xid="/5b8a"> </span>
               </span>
           </span> -->
     </p>
@@ -331,36 +331,378 @@
         <!--套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h1><p>一款以德丽莎的同人插画为背景的Typora主题（Light），整体色调偏粉，有较花里胡哨的<del>反常规</del>设计和动画。</p>
-<h1 id="主题特点"><a href="#主题特点" class="headerlink" title="主题特点"></a>主题特点</h1><ol>
-<li><p>漂亮的背景！<code>Teriri!Teriri!Teriri!</code></p>
-<blockquote>
-<p>背景使用了<a target="_blank" rel="noopener" href="https://www.pixiv.net/artworks/73572009">淺春老师的插画</a>（左侧链接直达）。</p>
-<p>关于授权：老师的Pixiv主页有写“转载随意”，但我仍去私信问了一遍，还在等待回复中。（如侵权还请麻烦私信我删除）</p>
+          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ol>
+<li><p>本教程适合：</p>
+<ol>
+<li>想要部署VSCode并配置环境来写C/C++程序。（只看<code>MinGW-w64部署</code>和<code>VSCode部署</code>）</li>
+<li>上一点搞定，希望能用VSCode来写C/C++操作MySQL。（只看<code>MySQL部署</code>）</li>
+</ol>
+</li>
+<li><p><em><strong>硬性条件：只针对Windows用户</strong></em>。</p>
+</li>
+<li><p><strong>教程可能会比较啰嗦，但绝对详细，跟着一步步来可以保证大概率正确。╰(<em>°▽°</em>)╯</strong></p>
+</li>
+<li><p><strong>约定</strong>：</p>
+<ol>
+<li><p><code>行内代码块</code>内放一些关键内容（你需要点的操作，按钮的名字等）。</p>
+</li>
+<li><p><strong>粗体字</strong>表示你需要注意的内容。</p>
+</li>
+<li><blockquote>
+<p>  可能会出现的问题，我会放在<strong>引用块</strong>内，就像这样。</p>
 </blockquote>
 </li>
-<li><p>粉色调为主！猛男狂喜！</p>
+</ol>
 </li>
-<li><p>流（花）畅（里）丝（胡）滑（哨）的<strong>动画</strong>（其实并不至于）和比较鲜艳的<strong>代码块配色</strong>（我<del>喜</del>欢~（大喊）</p>
-</li>
-<li><p>好看的字体！哇！是<code>思源黑体 （中文）</code>和<code>Cascadia Code（代码部分）</code>！</p>
-</li>
-<li><p><del>本主题由民间某<code>特日日粉丝团</code>成员制作，助您随时随地宣传<code>特日日神教</code>（bushi）</del></p>
-</li>
-<li><p><del>可能非常垃圾的设计 ，因为我也不是很有美术细胞和美术上的感觉。（等下这算特点？！）</del></p>
-</li>
-<li><p><del>经常</del>持续更新！（可能看心情但是我肯定要继续做下去的，包括深色模式之类的）</p>
+<li><p>作者水平不够高，如果出现错误该请各位批评指正。</p>
 </li>
 </ol>
-<p>总之欢迎各位下载使用，不管你是不是德厨233333</p>
-<h1 id="下载地址（含使用指南）"><a href="#下载地址（含使用指南）" class="headerlink" title="下载地址（含使用指南）"></a>下载地址（含使用指南）</h1><p>Github项目库：<a target="_blank" rel="noopener" href="https://github.com/907577659/teriteri">teriteri: A Typora theme by SaltA. )</a></p>
-<h1 id="后面是一些自己的废话"><a href="#后面是一些自己的废话" class="headerlink" title="后面是一些自己的废话"></a>后面是一些自己的废话</h1><p>一直以来都喜欢用markdown写各种东西，从笔记到一夜几千字肝申请书，写教程写文档都喜欢拿md，用的软件一直也是Typora。自从发现主题可以自定义（后来是自己写）了之后，就想着写一个以德为主题的主题，结合了半年多的失败经验终于写了一个（算是原创）的主题，正好赶着德生日做完当庆生啦~</p>
-<p>正如标题所言，这是一个自己写着玩的Typora（日间）主题<del>（夜间的也准备写了，想约张稿做背景，每天熬到两三点写代码一会儿VSCode夜间舒服一会儿打开Typora测试样式脸照得发白太痛苦了）</del>，所以有比较多的个人喜好并且并不是那么地常规（指部分地方有些反常或者反常识的设计）。</p>
-<p>代码部分分享给各位，如果真有想要用的或者自己改着用的，可以自行按照自己的需要修改。</p>
-<p>如果有大佬愿意约稿（我想约一张做后面深色模式的背景）也可以私我捏。</p>
-<p>以前每年就都是一句简单的<del>生日快乐</del>，今年算是拿了点不一样的东西（尽管比不上各位大佬们）展现自己的厨力了捏（雾）。</p>
-<p><strong>好嘛！世界第一可爱的德丽莎，生日快乐！</strong></p>
-<p>2023/03/27 Salt Apocalypse</p>
+<h1 id="MySQL部署"><a href="#MySQL部署" class="headerlink" title="MySQL部署"></a>MySQL部署</h1><h2 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h2><blockquote>
+<p>  <em>相关问题：我可以直接从这里开始看吗？</em></p>
+<p>  在部署MySQL之前请确保完成下面两项，没完成也不要紧，下面还有对应教程，完成之后再回来。<br>  已完成的请继续看<code>MySQL</code>部署。</p>
+</blockquote>
+<ol>
+<li>下载并安装GCC编译器 <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/">MinGW-w64</a>，且配置好了。</li>
+<li>下载并安装代码编辑器 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/Download">VSCode</a>，且配置好了。</li>
+<li>MySQL数据库相关知识，我现在情况是学期末要做MySQL数据库实验要求用C++控制MySQL。</li>
+</ol>
+<h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><ol>
+<li><p>进入官网<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/installer/">MySQL :: Download MySQL Installer</a>下载MySQL，选上面那个比较小的在线安装。</p>
+</li>
+<li><p>下载完成之后打开安装包，继续，Download界面可以直接选择默认（第一项，这样子Workbench也会自动下好）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_1.png"></p>
+</li>
+<li><p>下载好之后是安装，不断继续，但是注意两个问题。</p>
+<ol>
+<li><p>在安装之后的配置过程中，会让你设置本地数据库的root账号的密码，<strong>请一定要牢记！（或者你写什么地方求求了丢了我不管啊）</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_2.png"></p>
+</li>
+<li><p>配置过程之后会有一个服务名称，不是特别重要也还是请你记一下，默认是<code>MySQL80</code>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_3.png"></p>
+</li>
+</ol>
+</li>
+<li><p>注意这两个问题，之后就完事了。</p>
+</li>
+<li><p>能在<strong>任务管理器</strong>（<code>Ctrl+Shift+Esc</code>）的服务中看到这个服务，就说明安装完成，并且已经在运行了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_4.png"></p>
+</li>
+</ol>
+<h2 id="建立测试数据库"><a href="#建立测试数据库" class="headerlink" title="建立测试数据库"></a>建立测试数据库</h2><ol>
+<li><p>先自己建立一个视图，<strong>记住视图名称</strong>，建立一张表随便整点数据。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_5.png"></p>
+</li>
+</ol>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><ol>
+<li><p>打开<code>环境变量</code>，在<code>Path</code>，写入你本地数据库的<code>include</code>、<code>lib</code>还有<code>bin</code>。（不会的话百度或者看我下面配置minGw）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_9.png"></p>
+</li>
+</ol>
+<h2 id="配置VSCode"><a href="#配置VSCode" class="headerlink" title="配置VSCode"></a>配置VSCode</h2><ol>
+<li><p><strong>提前备份好你的VSCode工作区</strong>，如果按照我下文的教程，那就是C_Cpp文件夹。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_6.png"></p>
+</li>
+<li><p>打开<code>.vscode/c_cpp_properties.json</code>，如果没有手动创建一个，打开后在<code>includePath</code>这行添加你的MySQL服务器所带的<code>include</code>，MySQL服务器默认安装路径在<code>C:\\Program Files\\MySQL\\MySQL Server 8.0</code>。</p>
+<blockquote>
+<p>  <em>相关问题：输入了，但是有黄线。</em></p>
+<p>  说明路径不对，再检查检查。</p>
+<p>  相关问题：输入了，但是有红线提示和红色字符。</p>
+<p>  如果是从资源管理器的URL复制下来的，请你检查反斜杠是不是两个，一个会被识别成未知转义字符。</p>
+<p>  <em>相关问题：输入了，但是有红线。</em></p>
+<p>  你看看是不是上一行行末逗号没加或者加了中文逗号？</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_7.png"></p>
+</blockquote>
+</li>
+<li><p>打开<code>.vscode/tasks.json</code>，找到<code>args</code>，编译器的参数，<strong>目录选项</strong>要加上链接库（大写<code>-L</code>）、包含路径（大写<code>-I</code>）和引用链接库（小写<code>-l</code>）。<br>如下图所示，我也会放出部分代码，<strong>请按照自己实际情况填写</strong>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_8.png"></p>
+<pre class=" language-json"><code class="language-json"><span class="token property">"args"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"-fdiagnostics-color=always"</span><span class="token punctuation">,</span>
+    <span class="token string">"-g"</span><span class="token punctuation">,</span>
+    <span class="token string">"${fileDirname}\\Main.cpp"</span><span class="token punctuation">,</span>
+    <span class="token string">"-o"</span><span class="token punctuation">,</span>
+    <span class="token string">"${fileDirname}\\${fileBasenameNoExtension}.exe"</span><span class="token punctuation">,</span>
+    <span class="token string">"-I"</span><span class="token punctuation">,</span>
+    <span class="token string">"C:\\Program Files\\MySQL\\MySQL Server 8.0\\include"</span><span class="token punctuation">,</span>
+    <span class="token string">"-L"</span><span class="token punctuation">,</span>
+    <span class="token string">"C:\\Program Files\\MySQL\\MySQL Server 8.0\\lib"</span><span class="token punctuation">,</span>
+    <span class="token string">"-l"</span><span class="token punctuation">,</span>
+    <span class="token string">"mysql"</span>
+<span class="token punctuation">]</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="测试环境是否可用"><a href="#测试环境是否可用" class="headerlink" title="测试环境是否可用"></a>测试环境是否可用</h2><ol>
+<li><p>尝试写一个数据库访问程序来测试一下，这里放上我的作参考。</p>
+<pre class=" language-C++"><code class="language-C++">#include <iostream>
+#include <iomanip>
+#include <string>
+#include <stdlib.h>
+#include <stdio.h>
+#include <vector>
+#include <winsock2.h>
+#include <C:\Program Files\MySQL\MySQL Server 8.0\include\mysql.h> // 路径得对
+#pragma comment(lib, "libmysql")
+using namespace std;
+
+/* 数据库连接信息 */
+const char *HOST = "localhost";
+const char *USERNAME = "root",
+           *PASSWORD = "", // 按照自己的来
+           *DATABASE = ""; // 按照自己的来
+
+/* 全局变量 */
+MYSQL mysql;
+
+/* 函数 */
+// 连接数据库
+void connectSQL();
+
+// 主函数
+int main()
+{
+    // cout << "1" << endl;	// 这些1234都是测试用的
+    connectSQL();
+    mysql_close(&mysql);
+    // system("pause");
+    // cout << "4" << endl;
+    return 0;
+}
+
+// 连接数据库
+void connectSQL()
+{
+    // cout << "2" << endl;
+
+    mysql_init(&mysql);
+    unsigned int timeout = 3; // 设置超时时间
+    mysql_options(&mysql, MYSQL_OPT_CONNECT_TIMEOUT, &timeout);
+
+    // cout << "3" << endl;
+
+    if (mysql_real_connect(&mysql, HOST, USERNAME, PASSWORD, DATABASE, 0, NULL, CLIENT_FOUND_ROWS))
+    {
+        cout << "数据库已连接成功，正在加载目录，请根据提示进行操作" << endl;
+        mysql_query(&mysql, "set names utf8");
+    }
+    else
+    {
+        cout << "数据库连接失败，请查看数据库连接信息！" << endl;
+        const char *error = mysql_error(&mysql);
+        std::cout << error << std::endl;
+    }
+}
+</code></pre>
+<blockquote>
+<p>  <em>相关问题：一个警告！</em></p>
+<p>  写作时我是用的是我刚重装的PC机而不是我配置很顺利的笔记本，所以接下来的内容全部都是我当场进行解决的，不保证绝对的正确性，但是我会把排查思路和步骤全部列出，还请多花点时间排查问题所在！</p>
+</blockquote>
+</li>
+<li><p>此时程序编译应该没有问题了，按F5编译运行没报错，但是<strong>Main.out里可能不会有输出</strong>（我遇到的问题）。（可以先跳到第6步尝试一下再回来）</p>
+<ol>
+<li><p>这里我选择<strong>在外部</strong>打开Main.exe执行。</p>
+</li>
+<li><p>你可以根据你的文件夹路径找到该程序，双击执行，配合我代码中的输出123语句可以找到问题出现在哪里，再进行排查。</p>
+<blockquote>
+<p>  <em>相关问题：Main.exe - 系统错误</em><br>  <em>由于找不到libcrypto-1_1-x64.dll，无法继续执行代码。重新安装程序可能会解决此问题。</em></p>
+<p>  对于这个问题，请你检查有没有把数据库的<code>bin</code>文件添加到环境变量内，一开始我只添加了<code>include</code>和<code>bin</code>也出现了这个问题，添加后解决，并且能运行程序。</p>
+</blockquote>
+</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_10.png"></p>
+</li>
+<li><p>排除所有问题可以正常执行exe之后，<code>重启电脑</code>，发现问题解决。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_11.png"></p>
+</li>
+<li><p><em><strong>恭喜！已全部完成！(:з」∠)</strong></em></p>
+</li>
+</ol>
+<h1 id="MinGW-w64部署"><a href="#MinGW-w64部署" class="headerlink" title="MinGW-w64部署"></a>MinGW-w64部署</h1><blockquote>
+<p>  <em>相关问题：我会了干嘛看这个？</em></p>
+<p>  仅提供有需要的人看，如果你只需要安装MySQL请往上翻。<br>  这里简单介绍编辑器部署（网上内容大部分使用<strong>在线安装器</strong>的方法已失效），如果是在网上寻找的方法，请注意文章时间和相关评论。（本文时间<code>23/06/13</code>）</p>
+<p>  <em>相关问题：我可以先弄好VSCode再来看这个吗？</em></p>
+<p>  当然可以，只要你会弄。<br>  如果你什么都很陌生，我建议你按照我这个一步步来先安装MinGW再配置VSCode。</p>
+</blockquote>
+<h2 id="前置条件-1"><a href="#前置条件-1" class="headerlink" title="前置条件"></a>前置条件</h2><ol>
+<li>联网的电脑。</li>
+<li>清晰的脑子（有些步骤可以找其他方式 如果你嫌我麻烦 ，比如下载软件可以去镜像站）。</li>
+<li>耐心。</li>
+</ol>
+<h2 id="下载安装-1"><a href="#下载安装-1" class="headerlink" title="下载安装"></a>下载安装</h2><ol>
+<li><p>进入SourceForge<a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/">MinGW-w64</a>下载，<strong>不要点击绿色下载按钮</strong>，下翻找到在线安装器下面的最新版（写作时是<code>MinGW-W64 GCC-8.1.0</code>），选择下载链接<code>x86_64-win32-seh</code>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_1.png"></p>
+<blockquote>
+<p>  <em>下载下来的这个东西是啥啊？怎么是图标白色的一块？我怎么打开啊？</em></p>
+<p>  注意，下载下来的是一个<code>.7z</code>格式的压缩包，<strong>如果你没有能相关的解压软件</strong>，请去整一个来。（指路：<a target="_blank" rel="noopener" href="https://7-zip.org/">7-Zip</a>）</p>
+</blockquote>
+</li>
+<li><p>下载完毕后，解压出来，然后把里面的mingw64移动到<code>C:\Program Files</code> 。</p>
+<blockquote>
+<p>  <em>相关问题：我解压出来是一个很长的名字的文件夹啊？为什么我移动之后后续操作还是不行？</em></p>
+<p>  注意，根据解压方式不同可能会多套一层，点开你的mingw64，如果里面有<code>bin</code>文件夹就对了。<br>  如果点开还是个<code>mingw64</code>，请你拿出来，那个才是。</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_2.png"></p>
+  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_3.png"></blockquote>
+</li>
+</ol>
+<h2 id="配置环境变量-1"><a href="#配置环境变量-1" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><ol>
+<li><p>装好了吗？装好了之后，打开<code>mingw64\bin</code>文件夹，然后<strong>复制</strong>一下上方路径（是<code>C:\Program Files\mingw64\bin\</code>）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_6.png"></p>
+</li>
+<li><p>打开<code>设置</code>，进入<code>系统</code>选项卡，找到最下面的<code>系统信息</code>，找到<code>高级系统设置</code>，点开。</p>
+<blockquote>
+<p>  <em>相关问题：高级系统设置在哪里？</em></p>
+<p>  Win11在<strong>设备规格</strong>点开来，中间相关链接<strong>最右边</strong>。<br>  Win10可能在<strong>右侧</strong>几个蓝色划线链接的最下面。</p>
+</blockquote>
+</li>
+<li><p>点开之后跳出一个<strong>系统属性</strong>的窗口，最上面选项卡选择<code>高级</code>，然后看到右下角<code>环境变量</code>。</p>
+</li>
+<li><p>在上方的<code>用户变量</code>大框中找到<code>Path</code>，双击打开出现编辑框。</p>
+<blockquote>
+<p>  <em>相关问题：我双击点开是一个长条的编辑文本怎么办？</em></p>
+<p>  你看，咱们有上下两个文本框，在下面文本框的最左端写上<code>C;</code>（注意<strong>英文分号</strong>），点确定，再次双击点开。<br>  恢复成编辑框之后，请选择最上面的<code>C;</code>这行并删除。</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_4.png"></p>
+</blockquote>
+</li>
+<li><p>点击右上角<code>新建</code>按钮，把你的bin的路径粘贴进去，然后点<code>确定</code>按钮把你这些开起来的窗口全确定了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_5.png"></p>
+</li>
+<li><p>大功告成，关闭刚才打开的那些文件夹什么的。</p>
+</li>
+</ol>
+<h1 id="VSCode部署"><a href="#VSCode部署" class="headerlink" title="VSCode部署"></a>VSCode部署</h1><blockquote>
+<p>  <em>相关问题：我还没装MinGw可以先来看这个吗？</em></p>
+<p>  可以，但我建议先看MinGw，就在上面。</p>
+<p>  <em>相关问题：这不是很ez吗？复制几个文件夹就好？</em></p>
+<p>  昂确实我以前都是这么帮别人弄的，直到我后来<em>大概</em>弄清了一点整个环境搭建的思路，用系统提供的内容来配合建立整个.vscode以及相关配置会更<em>安全</em>一些，出了问题也比直接复制各种.json文件要<em>更好解决</em>。当然部分步骤你可以选择性跳过。</p>
+</blockquote>
+<h2 id="前置条件-2"><a href="#前置条件-2" class="headerlink" title="前置条件"></a>前置条件</h2><ol>
+<li>联网的电脑。</li>
+<li>清晰的脑子（有些步骤可以找其他方式 如果你嫌我麻烦 ，比如下载软件可以去镜像站）。</li>
+<li>耐心&amp;仔细&amp;耐心&amp;仔细。</li>
+</ol>
+<h2 id="下载安装-2"><a href="#下载安装-2" class="headerlink" title="下载安装"></a>下载安装</h2><ol>
+<li><p>进入官网下载 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/Download">VSCode</a>，并安装，安装的时候直接一路选择继续即可。</p>
+<blockquote>
+<p>  <em>相关问题：为啥我不能改安装位置啊？以前都可以的</em></p>
+<p>  在下载界面，请你选择<code>System Installer</code>安装包，蓝色大按钮默认下载<strong>User Installer</strong>。</p>
+</blockquote>
+</li>
+<li><p>【可选】安装汉化。</p>
+<ol>
+<li><p>打开VSCode你会发现英文界面，（默认在左侧）左侧找到<code>Extensions</code>或者按<code>Ctrl+Shift+X</code>打开<strong>扩展</strong>界面。</p>
+</li>
+<li><p>在上方文本框输入<code>Chinese</code>，一般第一个就是，点击卡片右下角安装，然后右下角提示你重启。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_1.png"></p>
+</li>
+</ol>
+</li>
+<li><p>安装C/C++扩展：打开<code>扩展</code>界面，搜索<code>C++</code>，安装第一个。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_2.png"></p>
+</li>
+</ol>
+<h2 id="建立C-x2F-C-编写工作区"><a href="#建立C-x2F-C-编写工作区" class="headerlink" title="建立C/C++编写工作区"></a>建立C/C++编写工作区</h2><ol>
+<li><p>在你电脑上找一个位置，创建一个文件夹，名字自己取，<strong>保证路径和名字不要出现汉字（概率造成乱码或错误）</strong>。</p>
+<blockquote>
+<p>  <em>相关问题：我咋知道路径有没有汉字出现？</em></p>
+<p>  打开你的文件夹，点击上方文本框，看看有没有。</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_3.png"></p>
+</blockquote>
+</li>
+<li><p>用 VSCode打开这个文件夹（提示信任问题请选择<code>是，我信任此作者</code>）：VSCode<code>文件</code>选项卡-&gt;<code>打开文件夹</code>。</p>
+</li>
+<li><p>侧边栏最上面，是一个<code>资源管理器</code>，点开，然后最上面有四个图标，选最左边的<code>新建文件</code>，创建一个<code>Main.cpp</code>、一个<code>Main.in</code>、一个<code>Main.out</code>。</p>
+</li>
+<li><p>写一段Hello World或者啥的，按<code>F5</code>运行，出现调试器的选择，选择<code>g++</code>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_4.png"></p>
+<blockquote>
+<p>  <em>相关问题：F5按了怎么是调屏幕亮度啊？</em></p>
+<p>  笔记本可能会整合进功能键，请你改成按<code>Fn+F5</code>。</p>
+<p>  <em>相关问题：我头文件为什么会有红色或者蓝色波浪号？</em></p>
+<p>  检查你的MinGw是否安装正确。</p>
+</blockquote>
+</li>
+<li><p>F5是调试的快捷键，首次调试应该只有编译文件。这时你会看到资源管理器多了个<code>.vscode</code>文件夹，下面还有<code>tasks.json</code>，根目录还有编译生成的二进制文件<code>Main.exe</code>。</p>
+</li>
+<li><p>这时，侧栏里找到<code>运行和调试</code>或者按<code>Ctrl+Shift+D</code>打开运行和调试，然后选择<code>创建launch.json文件</code>，出来的选项卡中选择<code>C++(GDB/LLDB)</code>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_5.png"></p>
+</li>
+<li><p>然后打开生成<code>launch.json</code>，右下角<code> 添加配置</code>，选择<code>C/C++:（gdb）启动</code>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_6.png"></p>
+</li>
+<li><p>按照下图修改必要内容，如果需要了解字段的意思，请跳转到之后的内容（选读）。<br>简单提一下需要修改的字段：</p>
+<ol>
+<li><p><code>program</code>：执行调试的二进制文件的地址。</p>
+</li>
+<li><p><code>args</code>：执行调试附加的参数（我这里主要是写了输入输出重定向，从文本内读取输入，并输出到文本，并且关闭了外置终端的使用）。</p>
+</li>
+<li><p><code>miDebuggerPath</code>：GDB的路径，要改为你自己的GDB路径，<strong>如果你按照我的操作安装mingw64，可以和我一样写</strong>；否则，请你自己填写<code>&lt;你的mingw64绝对路径&gt;\\bin\\gdb.exe</code>。</p>
+</li>
+<li><p><code>preLaunchTask</code>：不默认给出，需要自己添加，添加的时候<strong>注意位置以及英文逗号</strong>，用于调试之前执行编译操作。（设置后每次F5快捷键调试都会自动先编译再调试）</p>
+<blockquote>
+<p>  <em>相关问题：这个字段的内容该怎么填写？</em></p>
+<p>  填写你的编译任务的label，打开你的<code>tasks.json</code>，然后找到label，全文复制（包括双引号），如下图。<br>  填写入launch.json之后样子看下面。</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_8.png"></p>
+</blockquote>
+</li>
+</ol>
+<p>修改前如下图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_7.png"></p>
+<p>修改后如下图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_9.png"></p>
+<pre class=" language-json"><code class="language-json">//附上我的launch.json
+<span class="token punctuation">{</span>
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问<span class="token operator">:</span> https<span class="token operator">:</span>//go.microsoft.com/fwlink/?linkid=<span class="token number">830387</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.2.0"</span><span class="token punctuation">,</span>
+    <span class="token property">"configurations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"(gdb) 启动"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"cppdbg"</span><span class="token punctuation">,</span>
+            <span class="token property">"request"</span><span class="token operator">:</span> <span class="token string">"launch"</span><span class="token punctuation">,</span>
+            <span class="token property">"program"</span><span class="token operator">:</span> <span class="token string">"${fileDirname}\\${fileBasenameNoExtension}.exe"</span><span class="token punctuation">,</span>
+            <span class="token property">"args"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">"&lt;"</span><span class="token punctuation">,</span>
+                <span class="token string">"${fileDirname}\\${fileBasenameNoExtension}.in"</span><span class="token punctuation">,</span>
+                <span class="token string">">"</span><span class="token punctuation">,</span>
+                <span class="token string">"${fileDirname}\\${fileBasenameNoExtension}.out"</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"stopAtEntry"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">"cwd"</span><span class="token operator">:</span> <span class="token string">"${fileDirname}"</span><span class="token punctuation">,</span>
+            <span class="token property">"environment"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"externalConsole"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">"MIMode"</span><span class="token operator">:</span> <span class="token string">"gdb"</span><span class="token punctuation">,</span>
+            <span class="token property">"miDebuggerPath"</span><span class="token operator">:</span> <span class="token string">"C:\\Program Files\\mingw64\\bin\\gdb.exe"</span><span class="token punctuation">,</span>
+            <span class="token property">"setupCommands"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"为 gdb 启用整齐打印"</span><span class="token punctuation">,</span>
+                    <span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"-enable-pretty-printing"</span><span class="token punctuation">,</span>
+                    <span class="token property">"ignoreFailures"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"将反汇编风格设置为 Intel"</span><span class="token punctuation">,</span>
+                    <span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"-gdb-set disassembly-flavor intel"</span><span class="token punctuation">,</span>
+                    <span class="token property">"ignoreFailures"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"preLaunchTask"</span><span class="token operator">:</span> <span class="token string">"C/C++: g++.exe 生成活动文件"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p><strong>步骤 3~8</strong> 最难而且也是最容易出错的，请一定要仔细操作。全部完成之后，回到你的<code>Main.cpp</code>，<code>F5</code>编译并调试，会发现输出出现在<code>Main.out</code>文件内，说明配置完成，<em><strong>恭喜！_(:з」∠)_</strong></em></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_10.png"></p>
+</li>
+<li><blockquote>
+<p>  <em>相关错误：launch: program '……\Main.exe' does not exist</em></p>
+<p>  调试时无法找到exe文件，请检查launch.json里面的<code>preLaunchTask</code>保证调试前编译。</p>
+<p>  <em>相关错误：preLaunchcTask"build"已终止，退出代码为1。</em></p>
+<p>  （大概率，但不是绝对）检查你目前是不是编译（F5）之前按到了不是Main.cpp文件的其他地方，导致激活了别的文件框，这样子F5快捷键编译就会编译其他的文件，而其他文件并不是源文件。<br>  同时，你会看到<strong>终端</strong>的输出：<em>无法生成和调试，因为活动文件不是 C 或 C++ 源文件</em>。</p>
+<p>  <em><strong>更多错误请自行百度。</strong></em></p>
+</blockquote>
+</li>
+</ol>
+<h2 id="（选择性观看）-对于原理的个人简单分析和猜想"><a href="#（选择性观看）-对于原理的个人简单分析和猜想" class="headerlink" title="（选择性观看） 对于原理的个人简单分析和猜想"></a>（选择性观看） 对于原理的个人简单分析和猜想</h2><p>【等待施工中……】</p>
 
         </div>
 
@@ -393,13 +735,15 @@
           <div class="post-tags" style="color: #a39391">
             <span><i class="fa fa-tags"></i>
               
-              <a href="/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/" style="color: #716e77;">项目发布<em>·</em></a>
+              <a href="/tags/VSCode/" style="color: #716e77;">VSCode<em>·</em></a>
+              
+              <a href="/tags/MySQL/" style="color: #716e77;">MySQL<em>·</em></a>
               
             </span>
             <span>
               <i class="iconfont icon-file"></i>
               
-              <a href="/categories/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/" style="color: #716e77;">项目发布</a>
+              <a href="/categories/%E7%BB%8F%E9%AA%8C%E6%95%B4%E7%90%86/" style="color: #716e77;">经验整理</a>
               
             </span>
           </div>
@@ -421,36 +765,19 @@
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-        
-        <div class="post-nepre half previous">
-          
-            <a href="/post/5b8a.html" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/907577659/CDN/MainSite/MianCover.png"
-                  style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)"
-                  src="https://cdn.jsdelivr.net/gh/907577659/CDN/MainSite/MianCover.png">
-              </div>
-              <span class="label">Previous Post</span>
-              <div class="info">
-                <h3>使用VSCode进行C++操作MySQL的环境配置（windows适用）</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
           
           
-          
-          <div class="post-nepre half next">
-            
-              <a href="/post/4598.html" rel="next">
+            <div class="post-nepre full next">
+              
+              <a href="/post/641c.html" rel="next">
                 <div class="background">
-                  <img class="lazyload" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/Aquamarine_WNH/Banner_Aquamarine_QAS.png"
+                  <img class="lazyload" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/907577659/CDN/MainSite/MianCover.png"
                     style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
-                    onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/Aquamarine_WNH/Banner_Aquamarine_QAS.png">
+                    onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/907577659/CDN/MainSite/MianCover.png">
                 </div>
                 <span class="label">Next Post</span>
                 <div class="info">
-                  <h3>Aquamarine量化考核数据处理软件(AQAS)</h3>
+                  <h3>teriteri——自己写着玩的Typora主题</h3>
                   <hr>
                 </div>
               </a>
