@@ -354,7 +354,7 @@
 </li>
 </ol>
 </li>
-<li><p>作者水平不够高，如果出现错误该请各位批评指正。</p>
+<li><p>作者水平不够高，如果出现错误还请各位批评指正。</p>
 </li>
 </ol>
 <p>[TOC]</p>
@@ -365,7 +365,7 @@
 <ol>
 <li>下载并安装GCC编译器 <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/">MinGW-w64</a>，且配置好了。</li>
 <li>下载并安装代码编辑器 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/Download">VSCode</a>，且配置好了。</li>
-<li>MySQL数据库相关知识，我现在情况是学期末要做MySQL数据库实验要求用C++控制MySQL。</li>
+<li>MySQL数据库相关知识，我现在情况是学期末要做MySQL数据库实验要求用C/C++操作MySQL。</li>
 </ol>
 <h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><ol>
 <li><p>进入官网<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/installer/">MySQL :: Download MySQL Installer</a>下载MySQL，选上面那个比较小的在线安装。</p>
@@ -525,7 +525,7 @@ void connectSQL()
 </blockquote>
 <h2 id="前置条件-1"><a href="#前置条件-1" class="headerlink" title="前置条件"></a>前置条件</h2><ol>
 <li>联网的电脑。</li>
-<li>清晰的脑子（有些步骤可以找其他方式 如果你嫌我麻烦 ，比如下载软件可以去镜像站）。</li>
+<li>清晰的脑子（有些步骤可以找其他方式，比如下载软件可以去镜像站）。</li>
 <li>耐心。</li>
 </ol>
 <h2 id="下载安装-1"><a href="#下载安装-1" class="headerlink" title="下载安装"></a>下载安装</h2><ol>
@@ -703,7 +703,135 @@ void connectSQL()
 </blockquote>
 </li>
 </ol>
-<h2 id="（选择性观看）-对于原理的个人简单分析和猜想"><a href="#（选择性观看）-对于原理的个人简单分析和猜想" class="headerlink" title="（选择性观看） 对于原理的个人简单分析和猜想"></a>（选择性观看） 对于原理的个人简单分析和猜想</h2><p>【等待施工中……】</p>
+<h2 id="（选择性观看）-对于原理的个人简单分析和猜想"><a href="#（选择性观看）-对于原理的个人简单分析和猜想" class="headerlink" title="（选择性观看） 对于原理的个人简单分析和猜想"></a>（选择性观看） 对于原理的个人简单分析和猜想</h2><blockquote>
+<p>  前排提示：作者水平不够高，该部分很有可能有着错误之处，有问题的地方还请各位批评指正。</p>
+</blockquote>
+<h3 id="vscode工作区和-vscode文件夹"><a href="#vscode工作区和-vscode文件夹" class="headerlink" title="vscode工作区和.vscode文件夹"></a>vscode工作区和<code>.vscode</code>文件夹</h3><blockquote>
+<p>  VSCode工作区一种组织和管理项目的方式。<br>  工作区是一个包含了一组相关文件和设置的文件夹，它可以帮助开发人员更好地组织和协调项目的开发过程。</p>
+<p>  工作区根目录中会有一个叫做<code>.vscode</code>的文件夹，用于存放与项目相关的配置文件和设置。</p>
+</blockquote>
+<ol>
+<li><p>extensions.json</p>
+<p>和插件相关的一些内容，比如工作区的提示、插件的设置等。</p>
+</li>
+<li><p>launch.json</p>
+<p>该文件用于配置项目的调试器。可以定义调试器的类型、启动配置和调试目标等。</p>
+<p>下面以我的文件为例。</p>
+<pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
+    // 指定 launch.json 文件的版本。
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"2.0.0"</span><span class="token punctuation">,</span>
+    // 包含了一个或多个调试器配置项的数组。在这个示例中，只有一个配置项。
+    <span class="token property">"configurations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            // 配置项的名称，用于在 VSCode 中显示调试配置的友好名称。
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"C/C++: g++.exe 生成和调试活动文件"</span><span class="token punctuation">,</span>
+            // 指定调试器类型。在这个示例中，使用的是 C/C++ 调试器 (cppdbg<span class="token punctuation">)</span>，适用于调试 C/C++ 代码。
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"cppdbg"</span><span class="token punctuation">,</span>
+            //指定调试器的请求类型，用于指定调试会话的类型。在这个示例中，使用的是 <span class="token string">"launch"</span>，表示启动一个新的调试会话。
+            <span class="token property">"request"</span><span class="token operator">:</span> <span class="token string">"launch"</span><span class="token punctuation">,</span>
+            // 指定要调试的可执行文件路径，这里使用这些变量构建了可执行文件的路径。
+            // $<span class="token punctuation">{</span>fileDirname<span class="token punctuation">}</span> - 当前打开文件所在的目录， $<span class="token punctuation">{</span>fileBasenameNoExtension<span class="token punctuation">}</span> - 当前打开文件的文件名（不包含扩展名）
+            <span class="token property">"program"</span><span class="token operator">:</span> <span class="token string">"${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"</span><span class="token punctuation">,</span>
+            // 指定要传递给可执行文件的命令行参数。
+            // 这里通过 &lt; 和 > 运算符重定向输入输出，将输入文件和输出文件与可执行文件关联起来。
+            <span class="token property">"args"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">"&lt;"</span><span class="token punctuation">,</span>
+                <span class="token string">"${fileDirname}\\data\\${fileBasenameNoExtension}.in"</span><span class="token punctuation">,</span>
+                <span class="token string">">"</span><span class="token punctuation">,</span>
+                <span class="token string">"${fileDirname}\\data\\${fileBasenameNoExtension}.out"</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            // 指定是否在程序入口处暂停执行。在这个示例中，设置为 <span class="token boolean">false</span>，即不会在程序入口处暂停。
+            <span class="token property">"stopAtEntry"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            // 指定调试会话的当前工作目录。$<span class="token punctuation">{</span>fileDirname<span class="token punctuation">}</span> 变量表示当前打开文件所在的目录，因此将当前工作目录设置为当前文件所在的目录。
+            <span class="token property">"cwd"</span><span class="token operator">:</span> <span class="token string">"${fileDirname}"</span><span class="token punctuation">,</span>
+            // 指定调试器的环境变量。
+            <span class="token property">"environment"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            // 指定是否在外部控制台中运行调试会话。
+            // <span class="token boolean">false</span> - 使用VSCode集成中断，<span class="token boolean">true</span> - 使用外部终端
+            <span class="token property">"externalConsole"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            // 指定调试器的模式。在这个示例中，使用的是 gdb 调试器 (gdb<span class="token punctuation">)</span>。
+            <span class="token property">"MIMode"</span><span class="token operator">:</span> <span class="token string">"gdb"</span><span class="token punctuation">,</span>
+            // 指定 GDB 调试器的路径。
+            <span class="token property">"miDebuggerPath"</span><span class="token operator">:</span> <span class="token string">"C:\\Program Files\\mingw64\\bin\\gdb.exe"</span><span class="token punctuation">,</span>
+            // 指定要在调试会话开始时发送给调试器的初始化命令。
+            <span class="token property">"setupCommands"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"为 gdb 启用整齐打印"</span><span class="token punctuation">,</span>
+                    <span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"-enable-pretty-printing"</span><span class="token punctuation">,</span>
+                    <span class="token property">"ignoreFailures"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"将反汇编风格设置为 Intel"</span><span class="token punctuation">,</span>
+                    <span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"-gdb-set disassembly-flavor intel"</span><span class="token punctuation">,</span>
+                    <span class="token property">"ignoreFailures"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            // 指定在启动调试会话之前要运行的任务。
+            // 属性值来自 tasks.json 的 label
+            <span class="token property">"preLaunchTask"</span><span class="token operator">:</span> <span class="token string">"C/C++: g++.exe 生成活动文件"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>settings.json</p>
+<p>该文件用于存储项目的工作区设置，例如编辑器的首选项、格式化规则、代码提示等。这些设置将仅适用于当前工作区。</p>
+</li>
+<li><p>tasks.json</p>
+<p>该文件用于定义与任务相关的配置，例如构建、运行、测试等。</p>
+<p>下面以我的文件为例。</p>
+<pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
+    // 指定 tasks.json 文件的版本。
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"2.0.0"</span><span class="token punctuation">,</span>
+    // 包含了一个或多个任务配置项的数组。在这个示例中，只有一个配置项。
+    <span class="token property">"tasks"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            // 指定任务类型。在这个示例中，使用的是 C/C++ 构建任务 (cppbuild<span class="token punctuation">)</span>，适用于编译和构建 C/C++ 代码。
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"cppbuild"</span><span class="token punctuation">,</span>
+            // 指定任务的标签，用于在 VSCode 中显示任务的友好名称。
+            <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"C/C++: g++.exe 生成活动文件"</span><span class="token punctuation">,</span>
+            // 指定要执行的命令。
+            <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"C:\\Program Files\\mingw64\\bin\\g++.exe"</span><span class="token punctuation">,</span>
+            // 指定要传递给命令的参数。
+            <span class="token property">"args"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">"-fdiagnostics-color=always"</span><span class="token punctuation">,</span> // 在终端中诊断信息是否启用颜色
+                <span class="token string">"-g"</span><span class="token punctuation">,</span>                         // 生成调试信息
+                <span class="token string">"${file}"</span><span class="token punctuation">,</span>                    // 要编译的源代码
+                <span class="token string">"-o"</span><span class="token punctuation">,</span>                         // 指定生成的可执行文件的输出路径，下面这个就是输出路径
+                <span class="token string">"${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"</span><span class="token punctuation">,</span>
+                <span class="token string">"-lstdc++"</span><span class="token punctuation">,</span>                   // 链接C++标准库
+                <span class="token string">"-std=c++17"</span>                  // 指定使用C++<span class="token number">17</span>标准进行编译
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            // 指定任务的选项。
+            <span class="token property">"options"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">"cwd"</span><span class="token operator">:</span> <span class="token string">"${fileDirname}"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            // 指定问题匹配器，用于捕获并解析编译过程中的错误和警告。在这个示例中，使用的是 $gcc 问题匹配器，用于匹配 GCC 编译器的输出。
+            <span class="token property">"problemMatcher"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">"$gcc"</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            // 指定任务所属的分组。
+            <span class="token property">"group"</span><span class="token operator">:</span> <span class="token string">"build"</span><span class="token punctuation">,</span>
+            // 提供任务的详细描述。
+            <span class="token property">"detail"</span><span class="token operator">:</span> <span class="token string">"调试器生成的任务。"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="按照上述配置好之后，按F5调试会发生什么"><a href="#按照上述配置好之后，按F5调试会发生什么" class="headerlink" title="按照上述配置好之后，按F5调试会发生什么"></a>按照上述配置好之后，按F5调试会发生什么</h3><ol>
+<li>VSCode检查是否存在适用的调试配置文件（<strong>launch.json、tasks.json</strong>等），这些文件定义了调试和构建任务的设置。</li>
+<li>如果存在<strong>launch.json</strong>文件，读取调试信息并启动调试会话，并根据配置的启动方式来启动（这里使用了C/C++调试器）：<ol>
+<li>根据<strong>launch.json</strong>中的配置，启动相应的调试器（这里是GDB）。</li>
+<li>根据<strong>launch.json</strong>中的配置，执行任务以生成可执行文件（这里通过”preLaunchTask”找到任务的配置信息<strong>tasks.json</strong>并生成）。</li>
+<li>根据<strong>tasks.json</strong>中的配置，执行任务期间根据<strong>args</strong>中定义的选项和路径编译源代码文件。编译成功后按照指定路径输出，否则在终端报错。</li>
+<li>根据<strong>launch.json</strong>中的配置，生成完毕后，根据其中的配置将调试器连接到生成的可执行文件。</li>
+</ol>
+</li>
+<li>调试会话开始，可以开始设置断点、单步调试、查看变量等操作。</li>
+<li>调试完成后，可以在指定文件中查看输出。</li>
+</ol>
 
         </div>
 
