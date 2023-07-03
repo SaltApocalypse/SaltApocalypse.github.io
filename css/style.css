@@ -1146,7 +1146,7 @@ blockquote {
     position: absolute;
     top: -15px;
     left: 12px;
-    color: orange;
+    color: lightpink;
     font-family: FontAwesome
 }
 
@@ -1156,7 +1156,7 @@ blockquote:after {
     position: absolute;
     bottom: -15px;
     right: 5px;
-    color: orange;
+    color: lightpink;
     font-family: FontAwesome
 }
 blockquote p {
@@ -1433,7 +1433,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-    color: orange
+    color: lightpink
 }
 
 a:focus {
@@ -1443,7 +1443,7 @@ a:focus {
 a:hover,
 a:active {
     outline: 0;
-    color: orange
+    color: lightpink
 }
 
 .site-top {
@@ -1875,7 +1875,7 @@ a:active {
 }
 
 .site-title a:hover {
-    color: orange
+    color: lightpink
 }
 
 .site-title img {
@@ -1994,7 +1994,7 @@ a:active {
 }
 
 .site-top ul li a:hover {
-    color: orange
+    color: lightpink
 }
 
 .site-top ul li a:after {
@@ -2003,7 +2003,7 @@ a:active {
     position: absolute;
     bottom: -16px;
     height: 6px;
-    background-color: #fe9600;
+    background-color: lightpink;
     width: 100%;
     max-width: 0;
     transition: max-width .25s ease-in-out
@@ -2015,7 +2015,7 @@ a:active {
     position: absolute;
     bottom: -21px;
     height: 6px;
-    background-color: #fe9600;
+    background-color: lightpink;
     width: 100%;
     max-width: 0;
     transition: max-width .25s ease-in-out
@@ -2217,7 +2217,7 @@ a:active {
 }
 
 .entry-title a:hover {
-    color: orange
+    color: lightpink
 }
 
 .p-time {
@@ -2626,8 +2626,8 @@ i.iconfont.hotpost {
 
 .navigator i:hover {
     color: #fff;
-    background: orange;
-    border: 2px solid orange;
+    background: lightpink;
+    border: 2px solid lightpink;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -2653,7 +2653,7 @@ i.iconfont.hotpost {
 }
 
 .site-info a:hover {
-    color: orange
+    color: lightpink
 }
 
 .footertext p {
@@ -2789,8 +2789,8 @@ i.iconfont.hotpost {
 }
 
 .entry-content a:hover {
-    color: orange;
-    text-decoration: underline orange
+    color: lightpink;
+    text-decoration: underline lightpink
 }
 
 h1.entry-title {
@@ -3003,7 +3003,7 @@ h1.page-title.mb- {
 }
 
 .post-tags a:hover {
-    color: orange
+    color: lightpink
 }
 
 .post-tags i {
@@ -3077,7 +3077,7 @@ h1.page-title.mb- {
 }
 
 .post-share ul li a:hover {
-    color: orange
+    color: lightpink
 }
 
 .post-share .show-share {
@@ -3647,7 +3647,7 @@ h3#comments-list-title {
 }
 
 .butterBar-message {
-    background: #fe9600;
+    background: lightpink;
     color: #fff;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -3879,7 +3879,7 @@ h1.works-title {
     font-style: italic;
     font-size: 20px;
     font-weight: 400;
-    color: orange;
+    color: lightpink;
     margin-left: 30px;
     margin-top: 50px
 }
@@ -3910,7 +3910,7 @@ span.time {
 .ar-time i {
     padding: 10px;
     border-radius: 100px;
-    background: orange;
+    background: lightpink;
     color: #fff
 }
 
@@ -3940,7 +3940,7 @@ span.time {
 span.ar-circle {
     height: 10px;
     width: 10px;
-    background: orange;
+    background: lightpink;
     display: inline-block;
     position: absolute;
     left: -5px;
@@ -4033,7 +4033,7 @@ header.page-header {
 }
 
 span.sitename {
-    color: orange;
+    color: lightpink;
     padding-bottom: 10px;
     display: block;
     -webkit-transition: all .3s;
@@ -4067,12 +4067,12 @@ span.sitename {
 
 .link-title span.fake-title {
     padding-left: 10px;
-    border-left: 3px solid orange
+    border-left: 3px solid lightpink
 }
 
 .links ul li:before {
     content: "";
-    background-color: orange;
+    background-color: lightpink;
     -webkit-transform: skew(45deg, 0);
     transform: skew(45deg, 0);
     width: 0;
@@ -4087,7 +4087,7 @@ span.sitename {
 
 .links ul li:hover {
     color: #27323a;
-    border: 1px solid orange
+    border: 1px solid lightpink
 }
 
 .links ul li:hover:before {
@@ -4421,7 +4421,7 @@ a.page-numbers {
 }
 
 .comment h4 a:hover {
-    color: orange
+    color: lightpink
 }
 
 .comment hr {
@@ -4605,9 +4605,9 @@ a.page-numbers {
 }
 
 .comment-respond input[type='submit']:hover {
-    border: 1px solid #fe9600;
+    border: 1px solid lightpink;
     background: none !important;
-    color: #fe9600
+    color: lightpink
 }
 
 .comment-respond input[type='submit']:hover {
@@ -4730,7 +4730,7 @@ a.page-numbers {
 }
 
 .siren-checkbox-radio:checked+.siren-checkbox-radioInput:after {
-    background-color: #fe9600;
+    background-color: lightpink;
     border-radius: 100%;
     content: "";
     display: block;
@@ -5464,7 +5464,7 @@ i.iconfont.js-toggle-search.iconsearch {
 }
 
 .sorry li a:hover {
-    color: orange
+    color: lightpink
 }
 
 .sorry-inner {
@@ -5483,15 +5483,15 @@ i.iconfont.js-toggle-search.iconsearch {
 .err-button.back a {
     padding: 10px 30px;
     margin: 0 10px;
-    border: 1px solid orange;
-    color: orange;
+    border: 1px solid lightpink;
+    color: lightpink;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px
 }
 
 #gohome {
-    background: orange;
+    background: lightpink;
     color: #fff
 }
 
@@ -5635,7 +5635,7 @@ object {
 }
 
 #nprogress .bar {
-    background: orange;
+    background: lightpink;
     position: fixed;
     z-index: 1031;
     top: 0;
@@ -5650,7 +5650,7 @@ object {
     right: 0;
     width: 100px;
     height: 100%;
-    box-shadow: 0 0 10px orange, 0 0 5px orange;
+    box-shadow: 0 0 10px lightpink, 0 0 5px lightpink;
     opacity: 1;
     -webkit-transform: rotate(3deg) translate(0px, -4px);
     -ms-transform: rotate(3deg) translate(0px, -4px);
@@ -5674,8 +5674,8 @@ object {
     height: 20px;
     box-sizing: border-box;
     border: solid 3px transparent;
-    border-top-color: orange;
-    border-left-color: orange;
+    border-top-color: lightpink;
+    border-left-color: lightpink;
     border-radius: 50%;
     -webkit-animation: nprogress-spinner 400ms linear infinite;
     animation: nprogress-spinner 400ms linear infinite
@@ -5802,8 +5802,8 @@ i.iconfont.down {
 }
 
 #pagination a:hover {
-    border: 1px solid orange;
-    color: orange
+    border: 1px solid lightpink;
+    color: lightpink
 }
 
 #pagination .loading {
@@ -6011,7 +6011,7 @@ i.iconfont.down {
     }
 
     .links ul li:hover .sitename {
-        color: orange
+        color: lightpink
     }
 
     .links ul li:hover .linkdes {
@@ -6268,7 +6268,7 @@ i.iconfont.down {
 
     #mo-nav ul li a:hover {
         cursor: pointer;
-        color: orange
+        color: lightpink
     }
 
     .we-content li {
@@ -6806,7 +6806,7 @@ i.iconfont.down {
 
 .no-logged a {
     display: initial;
-    color: orange;
+    color: lightpink;
     font-size: 14px;
     padding: 0 5px;
     text-decoration: underline
@@ -7296,13 +7296,13 @@ button.botui-actions-buttons-button {
 }
 
 .logolink a:hover .sakurasono {
-    background-color: orange;
+    background-color: lightpink;
     color: #fff
 }
 
 .logolink a:hover .shironeko,
 .logolink a:hover rt {
-    color: orange
+    color: lightpink
 }
 
 .logolink.moe-mashiro a {
@@ -7775,7 +7775,7 @@ input[type=radio]:checked:before {
 
 @media(min-width:861px) {
     .hide-live2d {
-        background-color: orange;
+        background-color: lightpink;
         bottom: 156px;
         visibility: visible;
         min-height: 38.75px
@@ -8283,7 +8283,7 @@ li>ol {
 }
 
 .art .art-content #archives a:hover {
-    color: orange
+    color: lightpink
 }
 
 .art .art-content #archives .al_year {
@@ -8468,7 +8468,7 @@ a.toc-link {
 }
 
 .is-active-link::before {
-    background-color: orange !important
+    background-color: lightpink !important
 }
 
 .flipx {
@@ -8635,11 +8635,11 @@ a.toc-link {
 
 .motion-switcher-table th:hover {
     background-color: rgba(245, 245, 245, .5);
-    color: orange
+    color: lightpink
 }
 
 .motion-switcher-table .on-hover {
-    color: orange
+    color: lightpink
 }
 
 .motion-container {
@@ -8718,6 +8718,7 @@ a.toc-link {
     top: 0;
     height: 3px;
     background: #bebebe;
+    color: lightpink;
     transition-property: width, background;
     transition-duration: 1s, 1s;
     z-index: 99999
@@ -8922,8 +8923,8 @@ a.toc-link {
 }
 
 .insert-image-tips:hover {
-    color: orange;
-    border: 1px solid orange
+    color: lightpink;
+    border: 1px solid lightpink
 }
 
 .insert-image-button {
@@ -8938,8 +8939,8 @@ a.toc-link {
 }
 
 .insert-image-tips-hover {
-    color: orange;
-    border: 1px solid orange
+    color: lightpink;
+    border: 1px solid lightpink
 }
 
 .upload-image-preview {
@@ -10070,7 +10071,7 @@ span.sitename,
 #pagination a:hover,
 .post-content a:hover,
 .float-content i:hover {
-    color: #FE9600
+    color: lightpink
 }
 
 .feature i,
@@ -10082,11 +10083,11 @@ span.ar-circle,
 .object,
 .comment .comment-reply-link,
 .siren-checkbox-radio:checked+.siren-checkbox-radioInput:after {
-    background: #FE9600
+    background: lightpink
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #FE9600
+    background: lightpink
 }
 
 .download,
@@ -10095,7 +10096,7 @@ span.ar-circle,
 .links ul li:hover,
 #pagination a:hover,
 .comment-respond input[type='submit']:hover {
-    border-color: #FE9600
+    border-color: lightpink
 }
 
 .entry-content a:hover,
@@ -10112,7 +10113,7 @@ span.page-numbers.current,
 .site-title a:hover,
 i.iconfont.js-toggle-search.iconsearch:hover,
 .comment-respond input[type='submit']:hover {
-    color: #FE9600
+    color: lightpink
 }
 
 .comments .comments-main {
