@@ -14,14 +14,14 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/907577659/CDN/theme/css/style.css" type="text/css" media="all" id="saukra_css-css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Theme/css/style.css" type="text/css" media="all" id="saukra_css-css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/jquery.fancybox.min.css" media="all">  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/lib.min.css" media="all">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/font.css" media="all">
   <link rel="stylesheet" href="/css/insight.css" media="all">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/tags.css" media="all">
   
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/907577659/CDN/theme/css/logo.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Theme/css/logo.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/cungudafa/cdn/fonts/LOGO/logo.css">
   
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
@@ -371,37 +371,37 @@
 <li><p>进入官网<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/installer/">MySQL :: Download MySQL Installer</a>下载MySQL，选上面那个比较小的在线安装。</p>
 </li>
 <li><p>下载完成之后打开安装包，继续，Download界面可以直接选择默认（第一项，这样子Workbench也会自动下好）。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_1.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_1.png"></p>
 </li>
 <li><p>下载好之后是安装，不断继续，但是注意两个问题。</p>
 <ol>
 <li><p>在安装之后的配置过程中，会让你设置本地数据库的root账号的密码，<strong>请一定要牢记！（或者你写什么地方求求了丢了我不管啊）</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_2.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_2.png"></p>
 </li>
 <li><p>配置过程之后会有一个服务名称，不是特别重要也还是请你记一下，默认是<code>MySQL80</code>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_3.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_3.png"></p>
 </li>
 </ol>
 </li>
 <li><p>注意这两个问题，之后就完事了。</p>
 </li>
 <li><p>能在<strong>任务管理器</strong>（<code>Ctrl+Shift+Esc</code>）的服务中看到这个服务，就说明安装完成，并且已经在运行了。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_4.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_4.png"></p>
 </li>
 </ol>
 <h2 id="建立测试数据库"><a href="#建立测试数据库" class="headerlink" title="建立测试数据库"></a>建立测试数据库</h2><ol>
 <li><p>先自己建立一个视图，<strong>记住视图名称</strong>，建立一张表随便整点数据。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_5.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_5.png"></p>
 </li>
 </ol>
 <h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><ol>
 <li><p>打开<code>环境变量</code>，在<code>Path</code>，写入你本地数据库的<code>include</code>、<code>lib</code>还有<code>bin</code>。（不会的话百度或者看我下面配置minGw）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_9.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_9.png"></p>
 </li>
 </ol>
 <h2 id="配置VSCode"><a href="#配置VSCode" class="headerlink" title="配置VSCode"></a>配置VSCode</h2><ol>
 <li><p><strong>提前备份好你的VSCode工作区</strong>，如果按照我下文的教程，那就是C_Cpp文件夹。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_6.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_6.png"></p>
 </li>
 <li><p>打开<code>.vscode/c_cpp_properties.json</code>，如果没有手动创建一个，打开后在<code>includePath</code>这行添加你的MySQL服务器所带的<code>include</code>，MySQL服务器默认安装路径在<code>C:\\Program Files\\MySQL\\MySQL Server 8.0</code>。</p>
 <blockquote>
@@ -411,11 +411,11 @@
 <p>  如果是从资源管理器的URL复制下来的，请你检查反斜杠是不是两个，一个会被识别成未知转义字符。</p>
 <p>  <em>相关问题：输入了，但是有红线。</em></p>
 <p>  你看看是不是上一行行末逗号没加或者加了中文逗号？</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_7.png"></p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_7.png"></p>
 </blockquote>
 </li>
 <li><p>打开<code>.vscode/tasks.json</code>，找到<code>args</code>，编译器的参数，<strong>目录选项</strong>要加上链接库（大写<code>-L</code>）、包含路径（大写<code>-I</code>）和引用链接库（小写<code>-l</code>）。<br>如下图所示，我也会放出部分代码，<strong>请按照自己实际情况填写</strong>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_8.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_8.png"></p>
 <pre class=" language-json"><code class="language-json"><span class="token property">"args"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
     <span class="token string">"-fdiagnostics-color=always"</span><span class="token punctuation">,</span>
     <span class="token string">"-g"</span><span class="token punctuation">,</span>
@@ -509,10 +509,10 @@ void connectSQL()
 </blockquote>
 </li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_10.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_10.png"></p>
 </li>
 <li><p>排除所有问题可以正常执行exe之后，<code>重启电脑</code>，发现问题解决。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P1_11.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P1_11.png"></p>
 </li>
 <li><p><em><strong>恭喜！已全部完成！(:з」∠)</strong></em></p>
 </li>
@@ -530,7 +530,7 @@ void connectSQL()
 </ol>
 <h2 id="下载安装-1"><a href="#下载安装-1" class="headerlink" title="下载安装"></a>下载安装</h2><ol>
 <li><p>进入SourceForge<a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/">MinGW-w64</a>下载，<strong>不要点击绿色下载按钮</strong>，下翻找到在线安装器下面的最新版（写作时是<code>MinGW-W64 GCC-8.1.0</code>），选择下载链接<code>x86_64-win32-seh</code>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_1.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P2_1.png"></p>
 <blockquote>
 <p>  <em>下载下来的这个东西是啥啊？怎么是图标白色的一块？我怎么打开啊？</em></p>
 <p>  注意，下载下来的是一个<code>.7z</code>格式的压缩包，<strong>如果你没有能相关的解压软件</strong>，请去整一个来。（指路：<a target="_blank" rel="noopener" href="https://7-zip.org/">7-Zip</a>）</p>
@@ -540,13 +540,13 @@ void connectSQL()
 <blockquote>
 <p>  <em>相关问题：我解压出来是一个很长的名字的文件夹啊？为什么我移动之后后续操作还是不行？</em></p>
 <p>  注意，根据解压方式不同可能会多套一层，点开你的mingw64，如果里面有<code>bin</code>文件夹就对了。<br>  如果点开还是个<code>mingw64</code>，请你拿出来，那个才是。</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_2.png"></p>
-  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_3.png"></blockquote>
+<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P2_2.png"></p>
+  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P2_3.png"></blockquote>
 </li>
 </ol>
 <h2 id="配置环境变量-1"><a href="#配置环境变量-1" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><ol>
 <li><p>装好了吗？装好了之后，打开<code>mingw64\bin</code>文件夹，然后<strong>复制</strong>一下上方路径（是<code>C:\Program Files\mingw64\bin\</code>）。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_6.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P2_6.png"></p>
 </li>
 <li><p>打开<code>Windows设置</code>，进入<code>系统</code>选项卡，找到最下面的<code>系统信息</code>，找到<code>高级系统设置</code>，点开。</p>
 <blockquote>
@@ -560,11 +560,11 @@ void connectSQL()
 <blockquote>
 <p>  <em>相关问题：我双击点开是一个长条的编辑文本怎么办？</em></p>
 <p>  你看，咱们有上下两个文本框，在下面文本框的最左端写上<code>C;</code>（注意<strong>英文分号</strong>），点确定，再次双击点开。<br>  恢复成编辑框之后，请选择最上面的<code>C;</code>这行并删除。</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_4.png"></p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P2_4.png"></p>
 </blockquote>
 </li>
 <li><p>点击右上角<code>新建</code>按钮，把你的bin的路径粘贴进去，然后点<code>确定</code>按钮把你这些开起来的窗口全确定了。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P2_5.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P2_5.png"></p>
 </li>
 <li><p>大功告成，关闭刚才打开的那些文件夹什么的。</p>
 </li>
@@ -592,12 +592,12 @@ void connectSQL()
 <li><p>打开VSCode你会发现英文界面，（默认在左侧）左侧找到<code>Extensions</code>或者按<code>Ctrl+Shift+X</code>打开<strong>扩展</strong>界面。</p>
 </li>
 <li><p>在上方文本框输入<code>Chinese</code>，一般第一个就是，点击卡片右下角安装，然后右下角提示你重启。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_1.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P3_1.png"></p>
 </li>
 </ol>
 </li>
 <li><p>安装C/C++扩展：打开<code>扩展</code>界面，搜索<code>C++</code>，安装第一个。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_2.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P3_2.png"></p>
 </li>
 </ol>
 <h2 id="建立C-x2F-C-编写工作区"><a href="#建立C-x2F-C-编写工作区" class="headerlink" title="建立C/C++编写工作区"></a>建立C/C++编写工作区</h2><ol>
@@ -605,7 +605,7 @@ void connectSQL()
 <blockquote>
 <p>  <em>相关问题：我咋知道路径有没有汉字出现？</em></p>
 <p>  打开你的文件夹，点击上方文本框，看看有没有。</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_3.png"></p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P3_3.png"></p>
 </blockquote>
 </li>
 <li><p>用 VSCode打开这个文件夹（提示信任问题请选择<code>是，我信任此作者</code>）：VSCode<code>文件</code>选项卡-&gt;<code>打开文件夹</code>。</p>
@@ -613,7 +613,7 @@ void connectSQL()
 <li><p>侧边栏最上面，是一个<code>资源管理器</code>，点开，然后最上面有四个图标，选最左边的<code>新建文件</code>，创建一个<code>Main.cpp</code>、一个<code>Main.in</code>、一个<code>Main.out</code>。</p>
 </li>
 <li><p>写一段Hello World或者啥的，按<code>F5</code>运行，出现调试器的选择，选择<code>g++</code>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_4.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P3_4.png"></p>
 <blockquote>
 <p>  <em>相关问题：F5按了怎么是调屏幕亮度啊？</em></p>
 <p>  笔记本可能会整合进功能键，请你改成按<code>Fn+F5</code>。</p>
@@ -624,10 +624,10 @@ void connectSQL()
 <li><p>F5是调试的快捷键，首次调试应该只有编译文件。这时你会看到资源管理器多了个<code>.vscode</code>文件夹，下面还有<code>tasks.json</code>，根目录还有编译生成的二进制文件<code>Main.exe</code>。</p>
 </li>
 <li><p>这时，侧栏里找到<code>运行和调试</code>或者按<code>Ctrl+Shift+D</code>打开运行和调试，然后选择<code>创建launch.json文件</code>，出来的选项卡中选择<code>C++(GDB/LLDB)</code>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_5.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P3_5.png"></p>
 </li>
 <li><p>然后打开生成<code>launch.json</code>，右下角<code> 添加配置</code>，选择<code>C/C++:（gdb）启动</code>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_6.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P3_6.png"></p>
 </li>
 <li><p>按照下图修改必要内容，如果需要了解字段的意思，请跳转到之后的内容（选读）。<br>简单提一下需要修改的字段：</p>
 <ol>
@@ -641,14 +641,14 @@ void connectSQL()
 <blockquote>
 <p>  <em>相关问题：这个字段的内容该怎么填写？</em></p>
 <p>  填写你的编译任务的label，打开你的<code>tasks.json</code>，然后找到label，全文复制（包括双引号），如下图。<br>  填写入launch.json之后样子看下面。</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_8.png"></p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P3_8.png"></p>
 </blockquote>
 </li>
 </ol>
 <p>修改前如下图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_7.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P3_7.png"></p>
 <p>修改后如下图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_9.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P3_9.png"></p>
 <pre class=" language-json"><code class="language-json">//附上我的launch.json
 <span class="token punctuation">{</span>
     // 使用 IntelliSense 了解相关属性。 
@@ -692,7 +692,7 @@ void connectSQL()
 </code></pre>
 </li>
 <li><p><strong>步骤 3~8</strong> 最难而且也是最容易出错的，请一定要仔细操作。全部完成之后，回到你的<code>Main.cpp</code>，<code>F5</code>编译并调试，会发现输出出现在<code>Main.out</code>文件内，说明配置完成，<em><strong>恭喜！_(:з」∠)_</strong></em></p>
-<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Posts/VSCode&amp;Cpp&amp;MySQL/P3_10.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/P3_10.png"></p>
 </li>
 <li><blockquote>
 <p>  <em>相关错误：launch: program '……\Main.exe' does not exist</em></p>
