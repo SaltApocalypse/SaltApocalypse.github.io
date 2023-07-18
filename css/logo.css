@@ -2,19 +2,6 @@
     font-family: 'logo', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;
 }
 
-.logolink .sakuraso {
-    background-color: rgba(255, 255, 255, .5);
-    border-radius: 5px;
-    color: #464646;
-    height: auto;
-    line-height: 25px;
-    margin-right: 0;
-    padding-bottom: 0px;
-    padding-top: 1px;
-    text-size-adjust: 100%;
-    width: auto
-}
-
 .logolink a:hover .sakuraso {
     background-color: lightpink;
     color: #fff;
@@ -38,29 +25,42 @@
     text-decoration-line: none;
 }
 
+
+.logolink .sakuraso {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    color: #464646;
+    height: auto;
+    line-height: 25px;
+    margin-right: 0;
+    padding-bottom: 0px;
+    padding-top: 1px;
+    text-size-adjust: 100%;
+    width: auto
+}
+
 .logolink.logo .sakuraso,
 .logolink.logo .no {
     font-size: 25px;
     border-radius: 9px;
     padding-bottom: 2px;
     padding-top: 5px;
+    /* .no 旋转 */
 }
 
-/* .no 旋转 */
 .logolink.logo .no {
+    animation: spin 1.5s linear infinite;
     display: inline-block;
     margin-left: 5px;
-    animation: spin 1.5s linear infinite;
 }
 
 .logolink a:hover .no {
-    -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
+    animation: none;
 }
 
 .logolink ruby {
     ruby-position: under;
-    -webkit-ruby-position: after;
 }
 
 .logolink ruby rt {
