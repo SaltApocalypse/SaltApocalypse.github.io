@@ -906,7 +906,7 @@ template {
 }
 
 a {
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur), auto
+    cursor: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Cursor_Luna_Kindred/Cursors/help.cur), auto
 }
 
 a:link {
@@ -920,7 +920,7 @@ a:hover {
 }
 
 a:active {
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/work.cur), alias
+    cursor: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Cursor_Luna_Kindred/Cursors/work.cur), alias
 }
 
 abbr[title] {
@@ -1112,7 +1112,7 @@ h6 {
 p {
     margin-bottom: 1.5em;
     font-size: 15px;
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/texto.cur), auto
+    cursor: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Cursor_Luna_Kindred/Cursors/text.cur), auto
 }
 
 dfn,
@@ -1256,7 +1256,7 @@ html {
 body {
     background: #fff;
     background-attachment: fixed;
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/normal.cur), auto
+    cursor: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Cursor_Luna_Kindred/Cursors/pointer.cur), auto
 }
 
 blockquote:before,
@@ -2896,7 +2896,7 @@ h1.page-title.mb- {
     background-size: contain;
     transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Cursor_Luna_Kindred/Cursors/unavailable.cur), auto;
     opacity: 1
 }
 
@@ -4920,7 +4920,7 @@ li.feature-2 {
 
     .top-social_v2 li {
         margin-right: 0px !important;
-        cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur), auto !important;
+        cursor: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Cursor_Luna_Kindred/Cursors/help.cur), auto !important;
     }
 
     #bgvideo {
@@ -5417,10 +5417,10 @@ i.iconfont.js-toggle-search.iconsearch {
 }
 
 .err-button.back a:hover {
-    -webkit-box-shadow: 0 0 4px rgba(255, 165, 0, .85);
-    -moz-box-shadow: 0 0 4px rgba(255, 165, 0, .85);
-    -o-box-shadow: 0 0 4px rgba(255, 165, 0, .85);
-    box-shadow: 0 0 4px rgba(255, 165, 0, .85)
+    -webkit-box-shadow: 0 0 4px rgba(255, 182, 193, .85);
+    -moz-box-shadow: 0 0 4px rgba(255, 182, 193, .85);
+    -o-box-shadow: 0 0 4px rgba(255, 182, 193, .85);
+    box-shadow: 0 0 4px rgba(255, 182, 193, .85)
 }
 
 .infinite-scroll .posts-navigation,
@@ -5704,10 +5704,10 @@ i.iconfont.down {
 }
 
 #pagination a:hover {
-    -webkit-box-shadow: 0 0 4px rgba(255, 165, 0, .85);
-    -moz-box-shadow: 0 0 4px rgba(255, 165, 0, .85);
-    -o-box-shadow: 0 0 4px rgba(255, 165, 0, .85);
-    box-shadow: 0 0 4px rgba(255, 165, 0, .85)
+    -webkit-box-shadow: 0 0 4px rgba(255, 182, 193, .85);
+    -moz-box-shadow: 0 0 4px rgba(255, 182, 193, .85);
+    -o-box-shadow: 0 0 4px rgba(255, 182, 193, .85);
+    box-shadow: 0 0 4px rgba(255, 182, 193, .85)
 }
 
 #pagination a {
@@ -6919,7 +6919,7 @@ i.iconfont.down {
     border: 0;
     color: #fff;
     line-height: 1;
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Cursor_Luna_Kindred/Cursors/unavailable.cur), auto;
     font-size: 14px;
     font-weight: 500;
     padding: 7px 15px;
@@ -7078,7 +7078,7 @@ input.botui-actions-text-input::-moz-focus-inner {
 }
 
 button.botui-actions-buttons-button {
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Cursor_Luna_Kindred/Cursors/unavailable.cur), auto;
     appearance: button
 }
 
@@ -8619,7 +8619,7 @@ a.toc-link {
 .emotion-item,
 .emoji-item,
 .tieba-container span {
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur), auto
+    cursor: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Cursor_Luna_Kindred/Cursors/unavailable.cur), auto
 }
 
 .alignright {
@@ -9084,7 +9084,7 @@ a.toc-link {
     padding: 2px;
     text-shadow: none;
     border-radius: 0 0 5px 5px;
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/texto.cur), auto
+    cursor: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Cursor_Luna_Kindred/Cursors/text.cur), auto
 }
 
 .highlight-wrap code[data-rel]:before {
