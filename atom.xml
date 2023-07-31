@@ -6,7 +6,7 @@
   <link href="http://907577659.github.io/atom.xml" rel="self"/>
   
   <link href="http://907577659.github.io/"/>
-  <updated>2023-07-17T17:43:17.216Z</updated>
+  <updated>2023-07-31T19:50:48.153Z</updated>
   <id>http://907577659.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://907577659.github.io/post/230716.html"/>
     <id>http://907577659.github.io/post/230716.html</id>
     <published>2023-07-15T16:00:00.000Z</published>
-    <updated>2023-07-17T17:43:17.216Z</updated>
+    <updated>2023-07-31T19:50:48.153Z</updated>
     
     
     <summary type="html">原创月下初拥光标。</summary>
@@ -42,7 +42,7 @@
     <link href="http://907577659.github.io/post/230703.html"/>
     <id>http://907577659.github.io/post/230703.html</id>
     <published>2023-07-02T16:00:00.000Z</published>
-    <updated>2023-07-15T17:31:07.044Z</updated>
+    <updated>2023-07-29T09:00:09.000Z</updated>
     
     
     <summary type="html">再也不用担心换设备要重新部署博客啦！</summary>
@@ -54,6 +54,27 @@
     
     <category term="Blog" scheme="http://907577659.github.io/tags/Blog/"/>
     
+    <category term="Deploy" scheme="http://907577659.github.io/tags/Deploy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>整理一下各种部署的经验</title>
+    <link href="http://907577659.github.io/post/230729.html"/>
+    <id>http://907577659.github.io/post/230729.html</id>
+    <published>2023-07-02T16:00:00.000Z</published>
+    <updated>2023-07-29T09:13:27.000Z</updated>
+    
+    
+    <summary type="html">一点点摸索然后整理出适合自己的方案，仅供参考。</summary>
+    
+    
+    
+    <category term="经验整理" scheme="http://907577659.github.io/categories/%E7%BB%8F%E9%AA%8C%E6%95%B4%E7%90%86/"/>
+    
+    
+    <category term="Deploy" scheme="http://907577659.github.io/tags/Deploy/"/>
+    
   </entry>
   
   <entry>
@@ -61,7 +82,7 @@
     <link href="http://907577659.github.io/post/230613.html"/>
     <id>http://907577659.github.io/post/230613.html</id>
     <published>2023-06-12T16:00:00.000Z</published>
-    <updated>2023-07-15T17:31:19.214Z</updated>
+    <updated>2023-07-29T09:00:28.000Z</updated>
     
     
     <summary type="html">记录一下VSCode环境配置，可以用C++操作MySQL。</summary>
@@ -74,6 +95,8 @@
     <category term="VSCode" scheme="http://907577659.github.io/tags/VSCode/"/>
     
     <category term="MySQL" scheme="http://907577659.github.io/tags/MySQL/"/>
+    
+    <category term="Deploy" scheme="http://907577659.github.io/tags/Deploy/"/>
     
   </entry>
   
