@@ -11,7 +11,7 @@
     
     整理一下各种部署的经验 | 
     SaltA&#39;s Utopia
-  </title>
+  </title><meta name="robots" content="noindex">
   
   <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Site/favicon.ico">
   
@@ -359,8 +359,8 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230703/.png);"
-      src=" https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230703/.png">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230703.png);"
+      src=" https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230703.png">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">整理一下各种部署的经验</h1>
@@ -372,7 +372,7 @@
                     <i class="fa fa-calendar"></i>
                   </span>
                   <span class="post-meta-item-text">
-                    2023-7-3
+                    2023-7-29
                   </span>
                 </span>
                 <span class="bull">
@@ -396,7 +396,7 @@
     <i class="fa fa-book"></i>
     <span class="post-meta-item-text">字数统计: </span>
     <!-- 安装插件npm install hexo-wordcount --save -->
-    <span class="post-count">152字</span>
+    <span class="post-count">777字</span>
   </span>
 </span>
 <span class="bull">
@@ -405,7 +405,7 @@
   <span class="post-meta-item-icon">
     <i class="fa fa-coffee"></i>
     <span class="post-meta-item-text">阅读时长≈</span>
-    <span class="post-count">1分钟</span>
+    <span class="post-count">3分钟</span>
   </span>
 </span>
                         
@@ -435,20 +435,73 @@
             <!--套嵌目录使用（主要为了支援评论）-->
             
                 <div class="entry-content">
-                  <h1 id="vcpkg-windows"><a href="#vcpkg-windows" class="headerlink" title="vcpkg - windows"></a>vcpkg - windows</h1><h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><blockquote>
-<p>官网：<a target="_blank" rel="noopener" href="https://vcpkg.io/">vcpkg.io</a></p>
-<p>Github项目：<a target="_blank" rel="noopener" href="https://github.com/microsoft/vcpkg/">microsoft/vcpkg (github.com)</a></p>
+                  <h1 id="Windows-配置VSCode的C-x2F-C-环境"><a href="#Windows-配置VSCode的C-x2F-C-环境" class="headerlink" title="[Windows]配置VSCode的C/C++环境"></a>[Windows]配置VSCode的C/C++环境</h1><blockquote>
+<p>⚠时效性提醒 - 最后更新时间：<code>2023/06/13</code>⚠</p>
+<p>重定向：<a href="./230613.html">VSCode&amp;Cpp&amp;MySQL</a></p>
 </blockquote>
+<h1 id="Windows-C-x2F-C-操作MySQL（使用VSCode）"><a href="#Windows-C-x2F-C-操作MySQL（使用VSCode）" class="headerlink" title="[Windows]C/C++操作MySQL（使用VSCode）"></a>[Windows]C/C++操作MySQL（使用VSCode）</h1><blockquote>
+<p>⚠时效性提醒 - 最后更新时间：<code>2023/06/13</code>⚠</p>
+<p>重定向：<a href="./230613.html">VSCode&amp;Cpp&amp;MySQL</a></p>
+</blockquote>
+<h1 id="Windows-vcpkg"><a href="#Windows-vcpkg" class="headerlink" title="[Windows]vcpkg"></a>[Windows]vcpkg</h1><blockquote>
+<p>⚠时效性提醒 - 最后更新时间：<code>2023/08/04</code>⚠</p>
+<p>官网：<a target="_blank" rel="noopener" href="https://vcpkg.io/">vcpkg.io</a><br>Github：<a target="_blank" rel="noopener" href="https://github.com/microsoft/vcpkg/">microsoft/vcpkg (github.com)</a></p>
+</blockquote>
+<h2 id="下载仓库到本地"><a href="#下载仓库到本地" class="headerlink" title="下载仓库到本地"></a>下载仓库到本地</h2><ol>
+<li><p>按照官网说法，第一步需要克隆仓库（需要Git）。但是默认的使用HTTPS协议克隆好慢，以下是其他方法：</p>
 <ol>
-<li>按照官网说法，用Git克隆仓库。好慢，直接下了.zip包找地方解压。</li>
-<li>官网写着，运行引导脚本来构建vcpkg，<code>.\vcpkg\bootstrap-vcpkg.bat</code>，是下了个 <strong>vcpkg.exe</strong> ，下载超时。<br>但是它提示了这么一句：<strong>下载源地址 -&gt; 下载到本地的目标地址</strong>，直接从把源地址扔浏览器下载，然后放入对应地址。</li>
-<li>下载包，使用<code>vcpkg install [packages to install]</code>下载包，还是下载超时。<ol>
-<li>通过给的<strong>下载源地址</strong>去把文件下载好。</li>
-<li></li>
+<li><p>使用SSH协议来克隆<code>git clone git@github.com:microsoft/vcpkg.git</code>，可以自行切换镜像。</p>
+<p><em>提示：vcpkg 使用 git 控制其软件库的版本，使用镜像可能会导致更新不及时。</em></p>
+</li>
+<li><p>直接下了.zip压缩包找地方解压<strong>（官方建议<code>C:\dev\</code>或<code>C:\src\</code>下）</strong>。</p>
+<p><em>提示：之后如果需要进行<code>git push</code>等操作请</em>*<a href="#%E6%89%8B%E5%8A%A8%E5%88%9D%E5%A7%8B%E5%8C%96git%E4%BB%93%E5%BA%93">手动初始化仓库</a>*<em>。</em></p>
+</li>
+<li><p>使用代理。</p>
+</li>
+</ol>
+<p><em>提示：之后所有操作都视作在 <strong>vcpkg</strong> 根目录下进行，并且使用 <strong><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3#installing-the-msi-package">Powershell 7</a></strong> （这意味着下面的命令都会以<code>.\</code>开头）。</em></p>
+</li>
+<li><p>官网写着，运行引导脚本来构建vcpkg，执行<code>.\bootstrap-vcpkg.bat</code>，是下了个 <strong>vcpkg.exe</strong> ，下载超时。</p>
+<p>但是它提示了这么一句：<strong>下载源地址 -&gt; 下载到本地的目标地址</strong>，直接从把源地址扔浏览器下载，然后放入对应地址（这次应该是放在根目录，文件路径为<code>vcpkg.exe</code>）。</p>
+</li>
+</ol>
+<h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><ol>
+<li><p>在下载库之前，可以使用<code>.\vcpkg search [packages to install]</code>来搜索是否存在或者了解这个库具体的名字，如果下载失败了也可以搜索一下试试看。</p>
+</li>
+<li><p>下载库，使用<code>.\vcpkg install [packages to install]</code>下载库，还是下载超时。</p>
+<ol>
+<li><p>我选择<strong>手动下载</strong>：</p>
+<p>通过给的<strong>下载源地址</strong>去把文件下载好。（比如第一次使用会下载 <strong>PowerShell-7.2.11-win-x86.zip</strong>）</p>
+<p>然后放入对应地址（应该是放在根目录的<strong>downloads文件夹</strong>下，文件路径为<code>downloads\[packages].zip</code>）。</p>
+<p>然后重新执行<code>.\vcpkg install [packages to install]</code>。</p>
+</li>
+<li><p>（待补充……）</p>
+</li>
 </ol>
 </li>
 </ol>
-
+<h2 id="更进一步"><a href="#更进一步" class="headerlink" title="更进一步"></a>更进一步</h2><ol>
+<li>希望在Visual Studio中使用，执行<code>.\vcpkg integrate install</code>（该操作将 vcpkg 集成到全局。若要移除，把 install 替换为 <strong>remove</strong> ）。</li>
+<li>希望在CMake中使用：集成到全局之后设置再CMake，我自己也有一份<a href="#">尝试</a>。</li>
+</ol>
+<h2 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h2><h3 id="手动初始化git仓库"><a href="#手动初始化git仓库" class="headerlink" title="手动初始化git仓库"></a>手动初始化git仓库</h3><ol>
+<li>如果已经下载了 <strong>vcpkg-master.zip</strong> 并解压来使用，可能会需要手动初始化git仓库，打开终端进入文件夹，输入<code>git init</code>（完成后输出：*Initialized empty Git repository in [你的安装路径]/vcpkg/.git/*）。</li>
+<li>设置远程仓库链接<code>git remote add origin git@github.com:microsoft/vcpkg.git</code>，已经设置过的可以用<code>git remote set-url</code>来修改。</li>
+</ol>
+<h1 id="Windows-在VS中使用vcpkg管理库并使用CMake生成"><a href="#Windows-在VS中使用vcpkg管理库并使用CMake生成" class="headerlink" title="[Windows]在VS中使用vcpkg管理库并使用CMake生成"></a>[Windows]在VS中使用vcpkg管理库并使用CMake生成</h1><h2 id="部署-vcpkg-和-CMake"><a href="#部署-vcpkg-和-CMake" class="headerlink" title="部署 vcpkg 和 CMake"></a>部署 vcpkg 和 CMake</h2><ol>
+<li>vcpkg [见上文](# vcpkg - windows)。</li>
+<li>CMake<ol>
+<li><a target="_blank" rel="noopener" href="https://cmake.org/download">官网下载</a></li>
+<li>通过 VS ：在”使用 C++ 的桌面开发”/“使用 C++ 的 Linux 开发”中找到。</li>
+</ol>
+</li>
+</ol>
+<h2 id="开始使用-1"><a href="#开始使用-1" class="headerlink" title="开始使用"></a>开始使用</h2><p><em>提示：自己只尝试了以下的方法。</em></p>
+<ol>
+<li>在VS创建项目时选择 <strong>CMake 项目</strong>。</li>
+<li></li>
+</ol>
+<!-- flag of hidden posts -->
                 </div>
 
                 <!-- .entry-content -->
@@ -502,7 +555,7 @@
           <div class="tag-cloud-title">
           </div>
           <div class="tag-cloud-tags">
-            <a href="/tags/AquamarineCT/" style="font-size: 10px; color: #f06966">AquamarineCT</a> <a href="/tags/Blog/" style="font-size: 10px; color: #f06966">Blog</a> <a href="/tags/Deploy/" style="font-size: 16.67px; color: #769fbd">Deploy</a> <a href="/tags/MySQL/" style="font-size: 10px; color: #f06966">MySQL</a> <a href="/tags/Pepper/" style="font-size: 10px; color: #f06966">Pepper</a> <a href="/tags/TeriTeri/" style="font-size: 13.33px; color: #b38491">TeriTeri</a> <a href="/tags/VSCode/" style="font-size: 10px; color: #f06966">VSCode</a> <a href="/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/" style="font-size: 20px; color: #39bae8">项目发布</a>
+            <a href="/tags/AquamarineCT/" style="font-size: 10px; color: #f06966">AquamarineCT</a> <a href="/tags/Blog/" style="font-size: 10px; color: #f06966">Blog</a> <a href="/tags/Deploy/" style="font-size: 15px; color: #9592a7">Deploy</a> <a href="/tags/MySQL/" style="font-size: 10px; color: #f06966">MySQL</a> <a href="/tags/Pepper/" style="font-size: 10px; color: #f06966">Pepper</a> <a href="/tags/TeriTeri/" style="font-size: 15px; color: #9592a7">TeriTeri</a> <a href="/tags/VSCode/" style="font-size: 10px; color: #f06966">VSCode</a> <a href="/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/" style="font-size: 20px; color: #39bae8">项目发布</a>
           </div>
         </div> -->
           </article>
@@ -510,46 +563,7 @@
           <div class="toc" style="background: none;"></div>
           <section class="post-squares nextprev">
             
-              
-                <div class="post-nepre half previous">
-                  
-                        <a href="/post/230703.html" rel="prev">
-                          <div class="background">
-                            <img class="lazyload" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230703/Banner_BlogMigration.png"
-                              style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
-                              onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230703/Banner_BlogMigration.png">
-                          </div>
-                          <span class="label">Previous Post</span>
-                          <div class="info">
-                            <h3>
-                              总结一下博客迁移的经验
-                            </h3>
-                            <hr>
-                          </div>
-                        </a>
-                    </div>
-                    
                       
-                        
-                          <div class="post-nepre half next">
-                            
-                                  <a href="/post/230613.html" rel="next">
-                                    <div class="background">
-                                      <img class="lazyload" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg"
-                                        data-src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/Banner_vsc&mysql.png"
-                                        style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
-                                        onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/907577659/CDN/Blog/Pages/230613/Banner_vsc&mysql.png">
-                                    </div>
-                                    <span class="label">Next Post</span>
-                                    <div class="info">
-                                      <h3>
-                                        使用VSCode进行C/C++操作MySQL的环境配置（windows适用）
-                                      </h3>
-                                      <hr>
-                                    </div>
-                                  </a>
-                              </div>
-                              
           </section>
           <!-- 加密文章隐藏评论 -->
           <section class="comment" >
@@ -749,7 +763,7 @@
             <span style="color: #b9b9b9;padding-left: 20px;">
               <!-- 全网站字数统计wordcount -->
               
-              <i class="fa fa-line-chart"  aria-hidden="true" style="color: #ff9999;display:inline-block"></i> 博客全站共: <span class="post-count" style="color:#ff9999;">4.6k</span>字</span>
+              <i class="fa fa-line-chart"  aria-hidden="true" style="color: #ff9999;display:inline-block"></i> 博客全站共: <span class="post-count" style="color:#ff9999;">4.4k</span>字</span>
               
               <!-- 不蒜子网页计数器 -->
               
