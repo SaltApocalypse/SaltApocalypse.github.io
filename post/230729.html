@@ -104,9 +104,9 @@
     }
   </style>
 
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="SaltA's Utopia" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="SaltA's Utopia" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
   <script src="//instant.page/5.2.0" type="module"
     integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
@@ -396,7 +396,7 @@
     <i class="fa fa-book"></i>
     <span class="post-meta-item-text">字数统计: </span>
     <!-- 安装插件npm install hexo-wordcount --save -->
-    <span class="post-count">777字</span>
+    <span class="post-count">892字</span>
   </span>
 </span>
 <span class="bull">
@@ -443,8 +443,8 @@
 <p>⚠时效性提醒 - 最后更新时间：<code>2023/06/13</code>⚠</p>
 <p>重定向：<a href="./230613.html">VSCode&amp;Cpp&amp;MySQL</a></p>
 </blockquote>
-<h1 id="Windows-vcpkg"><a href="#Windows-vcpkg" class="headerlink" title="[Windows]vcpkg"></a>[Windows]vcpkg</h1><blockquote>
-<p>⚠时效性提醒 - 最后更新时间：<code>2023/08/04</code>⚠</p>
+<h1 id="Windows-在VS中使用vcpkg管理库并集成到工程"><a href="#Windows-在VS中使用vcpkg管理库并集成到工程" class="headerlink" title="[Windows]在VS中使用vcpkg管理库并集成到工程"></a>[Windows]在VS中使用vcpkg管理库并集成到工程</h1><blockquote>
+<p>⚠时效性提醒 - 最后更新时间：<code>2023/08/11</code>⚠</p>
 <p>官网：<a target="_blank" rel="noopener" href="https://vcpkg.io/">vcpkg.io</a><br>Github：<a target="_blank" rel="noopener" href="https://github.com/microsoft/vcpkg/">microsoft/vcpkg (github.com)</a></p>
 </blockquote>
 <h2 id="下载仓库到本地"><a href="#下载仓库到本地" class="headerlink" title="下载仓库到本地"></a>下载仓库到本地</h2><ol>
@@ -462,10 +462,10 @@
 <p><em>提示：之后所有操作都视作在 <strong>vcpkg</strong> 根目录下进行，并且使用 <strong><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3#installing-the-msi-package">Powershell 7</a></strong> （这意味着下面的命令都会以<code>.\</code>开头）。</em></p>
 </li>
 <li><p>官网写着，运行引导脚本来构建vcpkg，执行<code>.\bootstrap-vcpkg.bat</code>，是下了个 <strong>vcpkg.exe</strong> ，下载超时。</p>
-<p>但是它提示了这么一句：<strong>下载源地址 -&gt; 下载到本地的目标地址</strong>，直接从把源地址扔浏览器下载，然后放入对应地址（这次应该是放在根目录，文件路径为<code>vcpkg.exe</code>）。</p>
+<p>但是它提示了这么一句：<strong>下载源地址 -&gt; 下载到本地的目标地址</strong>，可以直接把源地址扔浏览器下载，然后把下载好的文件放入对应地址（这次应该是放在根目录，文件路径为<code>vcpkg.exe</code>）。</p>
 </li>
 </ol>
-<h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><ol>
+<h2 id="开始使用-vcpkg"><a href="#开始使用-vcpkg" class="headerlink" title="开始使用 - vcpkg"></a>开始使用 - vcpkg</h2><ol>
 <li><p>在下载库之前，可以使用<code>.\vcpkg search [packages to install]</code>来搜索是否存在或者了解这个库具体的名字，如果下载失败了也可以搜索一下试试看。</p>
 </li>
 <li><p>下载库，使用<code>.\vcpkg install [packages to install]</code>下载库，还是下载超时。</p>
@@ -473,6 +473,7 @@
 <li><p>我选择<strong>手动下载</strong>：</p>
 <p>通过给的<strong>下载源地址</strong>去把文件下载好。（比如第一次使用会下载 <strong>PowerShell-7.2.11-win-x86.zip</strong>）</p>
 <p>然后放入对应地址（应该是放在根目录的<strong>downloads文件夹</strong>下，文件路径为<code>downloads\[packages].zip</code>）。</p>
+<p><em>提示：可能有些时候还需要手动更改下载好的文件的文件名，具体看终端的文件路径。</em></p>
 <p>然后重新执行<code>.\vcpkg install [packages to install]</code>。</p>
 </li>
 <li><p>（待补充……）</p>
@@ -480,26 +481,23 @@
 </ol>
 </li>
 </ol>
-<h2 id="更进一步"><a href="#更进一步" class="headerlink" title="更进一步"></a>更进一步</h2><ol>
-<li>希望在Visual Studio中使用，执行<code>.\vcpkg integrate install</code>（该操作将 vcpkg 集成到全局。若要移除，把 install 替换为 <strong>remove</strong> ）。</li>
-<li>希望在CMake中使用：集成到全局之后设置再CMake，我自己也有一份<a href="#">尝试</a>。</li>
+<h2 id="开始使用-集成到VS工程"><a href="#开始使用-集成到VS工程" class="headerlink" title="开始使用 - 集成到VS工程"></a>开始使用 - 集成到VS工程</h2><ol>
+<li><p>在开始之前，请先确保部署好 vcpkg。</p>
+</li>
+<li><p>打开Visual Studio，上方选项卡选择<code>工具 -&gt; NuGet 包管理器 -&gt; 程序包管理器设置</code>。</p>
+<p> 在<code>程序包源</code>这一栏，点击右上角<strong>绿色加号</strong>添加新配置。</p>
+<p> <strong>名称</strong>自取，可以写个 vcpkg；<strong>源</strong>请设置为<code>&lt;自己的 vcpkg 根目录地址&gt;\scripts\buildsystems</code>。</p>
+</li>
+<li><p>在终端内（此时位于 vcpkg 根目录）输入<code>.\vcpkg integrate project</code>来生成配置，接下来终端会自动部署 <strong>nuget</strong> 插件。</p>
+<p><em>提示：可能还是会遇到下载超时，自行解决，手动下载请注意目标文件路径和文件名。</em></p>
+</li>
+<li><p>上一步操作完成后，会显示一条指令，并提示需要打开 vcpkg 的工程内的 nuget 控制台输入。</p>
+</li>
+<li></li>
 </ol>
 <h2 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h2><h3 id="手动初始化git仓库"><a href="#手动初始化git仓库" class="headerlink" title="手动初始化git仓库"></a>手动初始化git仓库</h3><ol>
 <li>如果已经下载了 <strong>vcpkg-master.zip</strong> 并解压来使用，可能会需要手动初始化git仓库，打开终端进入文件夹，输入<code>git init</code>（完成后输出：*Initialized empty Git repository in [你的安装路径]/vcpkg/.git/*）。</li>
 <li>设置远程仓库链接<code>git remote add origin git@github.com:microsoft/vcpkg.git</code>，已经设置过的可以用<code>git remote set-url</code>来修改。</li>
-</ol>
-<h1 id="Windows-在VS中使用vcpkg管理库并使用CMake生成"><a href="#Windows-在VS中使用vcpkg管理库并使用CMake生成" class="headerlink" title="[Windows]在VS中使用vcpkg管理库并使用CMake生成"></a>[Windows]在VS中使用vcpkg管理库并使用CMake生成</h1><h2 id="部署-vcpkg-和-CMake"><a href="#部署-vcpkg-和-CMake" class="headerlink" title="部署 vcpkg 和 CMake"></a>部署 vcpkg 和 CMake</h2><ol>
-<li>vcpkg [见上文](# vcpkg - windows)。</li>
-<li>CMake<ol>
-<li><a target="_blank" rel="noopener" href="https://cmake.org/download">官网下载</a></li>
-<li>通过 VS ：在”使用 C++ 的桌面开发”/“使用 C++ 的 Linux 开发”中找到。</li>
-</ol>
-</li>
-</ol>
-<h2 id="开始使用-1"><a href="#开始使用-1" class="headerlink" title="开始使用"></a>开始使用</h2><p><em>提示：自己只尝试了以下的方法。</em></p>
-<ol>
-<li>在VS创建项目时选择 <strong>CMake 项目</strong>。</li>
-<li></li>
 </ol>
 <!-- flag of hidden posts -->
                 </div>

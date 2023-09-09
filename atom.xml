@@ -3,11 +3,11 @@
   <title>SaltA&#39;s Utopia</title>
   
   
-  <link href="http://907577659.github.io/atom.xml" rel="self"/>
+  <link href="http://saltapocalypse.github.io/atom.xml" rel="self"/>
   
-  <link href="http://907577659.github.io/"/>
-  <updated>2023-08-04T08:13:06.117Z</updated>
-  <id>http://907577659.github.io/</id>
+  <link href="http://saltapocalypse.github.io/"/>
+  <updated>2023-08-04T08:13:06.000Z</updated>
+  <id>http://saltapocalypse.github.io/</id>
   
   <author>
     <name>Salt Apocalypse</name>
@@ -18,73 +18,73 @@
   
   <entry>
     <title>月下初拥主题光标</title>
-    <link href="http://907577659.github.io/post/230716.html"/>
-    <id>http://907577659.github.io/post/230716.html</id>
+    <link href="http://saltapocalypse.github.io/post/230716.html"/>
+    <id>http://saltapocalypse.github.io/post/230716.html</id>
     <published>2023-07-15T16:00:00.000Z</published>
-    <updated>2023-08-04T08:13:06.117Z</updated>
+    <updated>2023-08-04T08:13:06.000Z</updated>
     
     
     <summary type="html">原创月下初拥光标。</summary>
     
     
     
-    <category term="项目发布" scheme="http://907577659.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
+    <category term="项目发布" scheme="http://saltapocalypse.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
     
     
-    <category term="项目发布" scheme="http://907577659.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
+    <category term="项目发布" scheme="http://saltapocalypse.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
     
-    <category term="TeriTeri" scheme="http://907577659.github.io/tags/TeriTeri/"/>
+    <category term="TeriTeri" scheme="http://saltapocalypse.github.io/tags/TeriTeri/"/>
     
   </entry>
   
   <entry>
     <title>总结一下博客迁移的经验</title>
-    <link href="http://907577659.github.io/post/230703.html"/>
-    <id>http://907577659.github.io/post/230703.html</id>
+    <link href="http://saltapocalypse.github.io/post/230703.html"/>
+    <id>http://saltapocalypse.github.io/post/230703.html</id>
     <published>2023-07-02T16:00:00.000Z</published>
-    <updated>2023-07-29T09:00:09.761Z</updated>
+    <updated>2023-07-29T09:00:09.000Z</updated>
     
     
     <summary type="html">再也不用担心换设备要重新部署博客啦！</summary>
     
     
     
-    <category term="经验整理" scheme="http://907577659.github.io/categories/%E7%BB%8F%E9%AA%8C%E6%95%B4%E7%90%86/"/>
+    <category term="经验整理" scheme="http://saltapocalypse.github.io/categories/%E7%BB%8F%E9%AA%8C%E6%95%B4%E7%90%86/"/>
     
     
-    <category term="Blog" scheme="http://907577659.github.io/tags/Blog/"/>
+    <category term="Deploy" scheme="http://saltapocalypse.github.io/tags/Deploy/"/>
     
-    <category term="Deploy" scheme="http://907577659.github.io/tags/Deploy/"/>
+    <category term="Blog" scheme="http://saltapocalypse.github.io/tags/Blog/"/>
     
   </entry>
   
   <entry>
     <title>使用VSCode进行C/C++操作MySQL的环境配置（windows适用）</title>
-    <link href="http://907577659.github.io/post/230613.html"/>
-    <id>http://907577659.github.io/post/230613.html</id>
+    <link href="http://saltapocalypse.github.io/post/230613.html"/>
+    <id>http://saltapocalypse.github.io/post/230613.html</id>
     <published>2023-06-12T16:00:00.000Z</published>
-    <updated>2023-08-04T07:50:57.235Z</updated>
+    <updated>2023-08-04T07:50:57.000Z</updated>
     
     
     <summary type="html">记录一下VSCode环境配置，可以用C++操作MySQL。</summary>
     
     
     
-    <category term="经验整理" scheme="http://907577659.github.io/categories/%E7%BB%8F%E9%AA%8C%E6%95%B4%E7%90%86/"/>
+    <category term="经验整理" scheme="http://saltapocalypse.github.io/categories/%E7%BB%8F%E9%AA%8C%E6%95%B4%E7%90%86/"/>
     
     
-    <category term="Deploy" scheme="http://907577659.github.io/tags/Deploy/"/>
+    <category term="Deploy" scheme="http://saltapocalypse.github.io/tags/Deploy/"/>
     
-    <category term="VSCode" scheme="http://907577659.github.io/tags/VSCode/"/>
+    <category term="VSCode" scheme="http://saltapocalypse.github.io/tags/VSCode/"/>
     
-    <category term="MySQL" scheme="http://907577659.github.io/tags/MySQL/"/>
+    <category term="MySQL" scheme="http://saltapocalypse.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>teriteri——自己写着玩的Typora主题</title>
-    <link href="http://907577659.github.io/post/230328.html"/>
-    <id>http://907577659.github.io/post/230328.html</id>
+    <link href="http://saltapocalypse.github.io/post/230328.html"/>
+    <id>http://saltapocalypse.github.io/post/230328.html</id>
     <published>2023-03-27T16:00:00.000Z</published>
     <updated>2023-07-25T16:18:22.000Z</updated>
     
@@ -93,19 +93,19 @@
     
     
     
-    <category term="项目发布" scheme="http://907577659.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
+    <category term="项目发布" scheme="http://saltapocalypse.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
     
     
-    <category term="项目发布" scheme="http://907577659.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
+    <category term="项目发布" scheme="http://saltapocalypse.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
     
-    <category term="TeriTeri" scheme="http://907577659.github.io/tags/TeriTeri/"/>
+    <category term="TeriTeri" scheme="http://saltapocalypse.github.io/tags/TeriTeri/"/>
     
   </entry>
   
   <entry>
     <title>Aquamarine量化考核数据处理软件(AQAS)</title>
-    <link href="http://907577659.github.io/post/210117.html"/>
-    <id>http://907577659.github.io/post/210117.html</id>
+    <link href="http://saltapocalypse.github.io/post/210117.html"/>
+    <id>http://saltapocalypse.github.io/post/210117.html</id>
     <published>2021-09-30T16:00:00.000Z</published>
     <updated>2023-07-15T17:31:02.000Z</updated>
     
@@ -114,17 +114,17 @@
     
     
     
-    <category term="项目发布" scheme="http://907577659.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
+    <category term="项目发布" scheme="http://saltapocalypse.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
     
     
-    <category term="项目发布" scheme="http://907577659.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
+    <category term="项目发布" scheme="http://saltapocalypse.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
     
   </entry>
   
   <entry>
     <title>海蓝宝石——智慧敬老院</title>
-    <link href="http://907577659.github.io/post/191208.html"/>
-    <id>http://907577659.github.io/post/191208.html</id>
+    <link href="http://saltapocalypse.github.io/post/191208.html"/>
+    <id>http://saltapocalypse.github.io/post/191208.html</id>
     <published>2021-09-30T16:00:00.000Z</published>
     <updated>2023-07-15T17:31:04.000Z</updated>
     
@@ -133,14 +133,14 @@
     
     
     
-    <category term="项目发布" scheme="http://907577659.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
+    <category term="项目发布" scheme="http://saltapocalypse.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
     
     
-    <category term="项目发布" scheme="http://907577659.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
+    <category term="项目发布" scheme="http://saltapocalypse.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B8%83/"/>
     
-    <category term="AquamarineCT" scheme="http://907577659.github.io/tags/AquamarineCT/"/>
+    <category term="AquamarineCT" scheme="http://saltapocalypse.github.io/tags/AquamarineCT/"/>
     
-    <category term="Pepper" scheme="http://907577659.github.io/tags/Pepper/"/>
+    <category term="Pepper" scheme="http://saltapocalypse.github.io/tags/Pepper/"/>
     
   </entry>
   
