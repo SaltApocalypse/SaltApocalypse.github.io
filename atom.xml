@@ -6,7 +6,7 @@
   <link href="http://saltapocalypse.github.io/atom.xml" rel="self"/>
   
   <link href="http://saltapocalypse.github.io/"/>
-  <updated>2023-08-04T08:13:06.000Z</updated>
+  <updated>2023-09-18T16:43:01.651Z</updated>
   <id>http://saltapocalypse.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>整理一下各种部署的经验</title>
+    <link href="http://saltapocalypse.github.io/post/230729.html"/>
+    <id>http://saltapocalypse.github.io/post/230729.html</id>
+    <published>2023-07-28T16:00:00.000Z</published>
+    <updated>2023-09-18T16:43:01.651Z</updated>
+    
+    
+    <summary type="html">一点点摸索然后整理出适合自己的方案，做个记录下次就不用再重新摸索了。</summary>
+    
+    
+    
+    <category term="经验整理" scheme="http://saltapocalypse.github.io/categories/%E7%BB%8F%E9%AA%8C%E6%95%B4%E7%90%86/"/>
+    
+    
+    <category term="Deploy" scheme="http://saltapocalypse.github.io/tags/Deploy/"/>
+    
+  </entry>
   
   <entry>
     <title>月下初拥主题光标</title>
@@ -42,7 +61,7 @@
     <link href="http://saltapocalypse.github.io/post/230703.html"/>
     <id>http://saltapocalypse.github.io/post/230703.html</id>
     <published>2023-07-02T16:00:00.000Z</published>
-    <updated>2023-07-29T09:00:09.000Z</updated>
+    <updated>2023-09-18T16:43:21.145Z</updated>
     
     
     <summary type="html">再也不用担心换设备要重新部署博客啦！</summary>
@@ -52,9 +71,9 @@
     <category term="经验整理" scheme="http://saltapocalypse.github.io/categories/%E7%BB%8F%E9%AA%8C%E6%95%B4%E7%90%86/"/>
     
     
-    <category term="Deploy" scheme="http://saltapocalypse.github.io/tags/Deploy/"/>
-    
     <category term="Blog" scheme="http://saltapocalypse.github.io/tags/Blog/"/>
+    
+    <category term="Deploy" scheme="http://saltapocalypse.github.io/tags/Deploy/"/>
     
   </entry>
   
@@ -63,7 +82,7 @@
     <link href="http://saltapocalypse.github.io/post/230613.html"/>
     <id>http://saltapocalypse.github.io/post/230613.html</id>
     <published>2023-06-12T16:00:00.000Z</published>
-    <updated>2023-08-04T07:50:57.000Z</updated>
+    <updated>2023-09-18T16:43:38.295Z</updated>
     
     
     <summary type="html">记录一下VSCode环境配置，可以用C++操作MySQL。</summary>
@@ -78,6 +97,31 @@
     <category term="VSCode" scheme="http://saltapocalypse.github.io/tags/VSCode/"/>
     
     <category term="MySQL" scheme="http://saltapocalypse.github.io/tags/MySQL/"/>
+    
+    <category term="C/C++" scheme="http://saltapocalypse.github.io/tags/C-C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自己的VSCode C/C++环境配置记录（windows适用）</title>
+    <link href="http://saltapocalypse.github.io/post/230612.html"/>
+    <id>http://saltapocalypse.github.io/post/230612.html</id>
+    <published>2023-06-11T16:00:00.000Z</published>
+    <updated>2023-09-18T16:43:36.836Z</updated>
+    
+    
+    <summary type="html">配置C/C++的编译器GCC以及VSCode。</summary>
+    
+    
+    
+    <category term="经验整理" scheme="http://saltapocalypse.github.io/categories/%E7%BB%8F%E9%AA%8C%E6%95%B4%E7%90%86/"/>
+    
+    
+    <category term="Deploy" scheme="http://saltapocalypse.github.io/tags/Deploy/"/>
+    
+    <category term="VSCode" scheme="http://saltapocalypse.github.io/tags/VSCode/"/>
+    
+    <category term="C/C++" scheme="http://saltapocalypse.github.io/tags/C-C/"/>
     
   </entry>
   
