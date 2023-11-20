@@ -6,7 +6,7 @@
   <link href="http://saltapocalypse.github.io/atom.xml" rel="self"/>
   
   <link href="http://saltapocalypse.github.io/"/>
-  <updated>2023-10-17T12:26:43.913Z</updated>
+  <updated>2023-11-20T08:01:30.915Z</updated>
   <id>http://saltapocalypse.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>整理一下各种部署的经验</title>
-    <link href="http://saltapocalypse.github.io/post/230729.html"/>
-    <id>http://saltapocalypse.github.io/post/230729.html</id>
+    <link href="http://saltapocalypse.github.io/post/deploy.html"/>
+    <id>http://saltapocalypse.github.io/post/deploy.html</id>
     <published>2023-07-28T16:00:00.000Z</published>
-    <updated>2023-10-17T12:26:43.913Z</updated>
+    <updated>2023-11-20T08:01:30.915Z</updated>
     
     
     <summary type="html">一点点摸索然后整理出适合自己的方案，做个记录下次就不用再重新摸索了。</summary>
@@ -40,7 +40,7 @@
     <link href="http://saltapocalypse.github.io/post/230716.html"/>
     <id>http://saltapocalypse.github.io/post/230716.html</id>
     <published>2023-07-15T16:00:00.000Z</published>
-    <updated>2023-10-10T03:37:26.552Z</updated>
+    <updated>2023-10-10T03:37:26.000Z</updated>
     
     
     <summary type="html">原创月下初拥光标。</summary>
@@ -61,7 +61,7 @@
     <link href="http://saltapocalypse.github.io/post/230703.html"/>
     <id>http://saltapocalypse.github.io/post/230703.html</id>
     <published>2023-07-02T16:00:00.000Z</published>
-    <updated>2023-10-10T03:37:26.543Z</updated>
+    <updated>2023-10-10T03:37:26.000Z</updated>
     
     
     <summary type="html">再也不用担心换设备要重新部署博客啦！</summary>
@@ -71,9 +71,9 @@
     <category term="经验整理" scheme="http://saltapocalypse.github.io/categories/%E7%BB%8F%E9%AA%8C%E6%95%B4%E7%90%86/"/>
     
     
-    <category term="Blog" scheme="http://saltapocalypse.github.io/tags/Blog/"/>
-    
     <category term="Deploy" scheme="http://saltapocalypse.github.io/tags/Deploy/"/>
+    
+    <category term="Blog" scheme="http://saltapocalypse.github.io/tags/Blog/"/>
     
   </entry>
   
@@ -82,7 +82,7 @@
     <link href="http://saltapocalypse.github.io/post/230613.html"/>
     <id>http://saltapocalypse.github.io/post/230613.html</id>
     <published>2023-06-12T16:00:00.000Z</published>
-    <updated>2023-10-10T03:37:26.576Z</updated>
+    <updated>2023-10-10T03:37:26.000Z</updated>
     
     
     <summary type="html">记录一下VSCode环境配置，可以用C++操作MySQL。</summary>
@@ -107,7 +107,7 @@
     <link href="http://saltapocalypse.github.io/post/230612.html"/>
     <id>http://saltapocalypse.github.io/post/230612.html</id>
     <published>2023-06-11T16:00:00.000Z</published>
-    <updated>2023-10-10T03:37:26.584Z</updated>
+    <updated>2023-10-10T03:37:26.000Z</updated>
     
     
     <summary type="html">配置C/C++的编译器GCC以及VSCode。</summary>
@@ -130,7 +130,7 @@
     <link href="http://saltapocalypse.github.io/post/230328.html"/>
     <id>http://saltapocalypse.github.io/post/230328.html</id>
     <published>2023-03-27T16:00:00.000Z</published>
-    <updated>2023-10-10T03:37:26.593Z</updated>
+    <updated>2023-10-10T03:37:26.000Z</updated>
     
     
     <summary type="html">自己写着玩的Typora主题，某不知名德厨为我们可爱的小德丽莎庆生（笑）。</summary>
@@ -151,7 +151,7 @@
     <link href="http://saltapocalypse.github.io/post/210117.html"/>
     <id>http://saltapocalypse.github.io/post/210117.html</id>
     <published>2021-09-30T16:00:00.000Z</published>
-    <updated>2023-10-10T03:37:26.543Z</updated>
+    <updated>2023-10-10T03:37:26.000Z</updated>
     
     
     <summary type="html">走向新世界的第一步？（笑）</summary>
@@ -170,7 +170,7 @@
     <link href="http://saltapocalypse.github.io/post/191208.html"/>
     <id>http://saltapocalypse.github.io/post/191208.html</id>
     <published>2021-09-30T16:00:00.000Z</published>
-    <updated>2023-10-10T03:37:26.602Z</updated>
+    <updated>2023-10-10T03:37:26.000Z</updated>
     
     
     <summary type="html">团队处女作：海蓝宝石“智慧敬老院”。</summary>
