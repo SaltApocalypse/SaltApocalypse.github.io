@@ -117,9 +117,9 @@
     
     <category term="VSCode" scheme="http://saltapocalypse.github.io/tags/VSCode/"/>
     
-    <category term="MySQL" scheme="http://saltapocalypse.github.io/tags/MySQL/"/>
-    
     <category term="C/C++" scheme="http://saltapocalypse.github.io/tags/C-C/"/>
+    
+    <category term="MySQL" scheme="http://saltapocalypse.github.io/tags/MySQL/"/>
     
   </entry>
   
